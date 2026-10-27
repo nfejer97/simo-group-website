@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};
+window.__SIMO_IMAGES=["docs-media","ref-3","ref-2","ref-1","persona-4","persona-3","persona-2","persona-1","article-1","article-2","hero-media","position-main","position-detail","audience-media","footer-media","r-hero-main","r-story-1","r-story-2","r-story-3","r-vision-media"];
+window.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='IMG'||!t.hasAttribute('data-slot'))return;var s=t.getAttribute('src')||'';if(s.indexOf('{{')>=0||s.indexOf('%7B')>=0)return;var m=s.match(/assets\/images\/([^\/]+)\.webp$/);if(m&&window.__SIMO_IMAGES.indexOf(m[1])>=0)return;if(s.indexOf('placeholder.svg')<0)t.src='assets/images/placeholder.svg';},true);</script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Tervezőknek | SIMO GROUP – specifikáció és műszaki támogatás</title>
+<meta name="description" content="Tervezői támogatás belsőépítészeti térelválasztáshoz: dokumentáció, BIM/CAD, részletrajzok, specifikációs segítség és szakmai konzultáció a SIMO GROUP-tól.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+html,body{margin:0;background:#F4F3EF;color:#101415;-webkit-font-smoothing:antialiased;}
+html{scroll-behavior:smooth;}
+*{box-sizing:border-box;}
+a{color:#2C7478;text-decoration:none;}
+a:hover{color:#399296;}
+input,textarea,select,button{font-family:inherit;}
+::selection{background:#399296;color:#fff;}
+:root{--px:120px;}
+@media (max-width:1439px){:root{--px:96px;}}
+@media (max-width:1023px){:root{--px:56px;}}
+@media (max-width:759px){:root{--px:24px;}}
+</style>
+</helmet>
+
+<div style="font-family:'Hanken Grotesk',system-ui,sans-serif;background:#F4F3EF;color:#101415;">
+
+<header style="position:fixed;top:20px;left:max(10px,calc(var(--px) - 22px));right:max(10px,calc(var(--px) - 12px));z-index:50;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 22px;border-radius:6px;background:{{ navBg }};border:1px solid {{ navBorder }};box-shadow:inset 0 1px 0 {{ navHighlight }},inset 0 -1px 0 rgba(255,255,255,0.06),0 30px 60px -32px rgba(0,0,0,0.45);backdrop-filter:blur(20px) saturate(160%) {{ navBright }};-webkit-backdrop-filter:blur(20px) saturate(160%) {{ navBright }};transition:background .5s ease,border-color .5s ease;">
+  <a href="index.html" style="display:flex;align-items:center;gap:14px;">
+    <sc-if value="{{ navDark }}" hint-placeholder-val="{{ true }}"><img src="./assets/simo-logo-white.png" alt="SIMO Group" style="height:46px;width:auto;display:block;"></sc-if>
+    <sc-if value="{{ navLight }}" hint-placeholder-val="{{ false }}"><img src="./assets/simo-logo.png" alt="SIMO Group" style="height:46px;width:auto;display:block;"></sc-if>
+  </a>
+  <sc-if value="{{ fullNav }}" hint-placeholder-val="{{ true }}"><nav style="display:flex;align-items:center;gap:clamp(0px,0.3vw,4px);" onMouseLeave="{{ navLeave }}">
+    <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="6">
+      <a href="{{ n.href }}" onClick="{{ n.click }}" onMouseEnter="{{ n.enter }}" style="white-space:nowrap;font-size:clamp(14px,1.05vw,15.5px);font-weight:600;color:{{ navInk }};padding:9px clamp(8px,0.8vw,13px);border-radius:4px;background:{{ n.bg }};border:1px solid {{ n.bd }};box-shadow:{{ n.sh }};transition:background .3s ease,border-color .3s ease,box-shadow .3s ease;">{{ n.label }}</a>
+    </sc-for>
+  </nav></sc-if>
+  <sc-if value="{{ compactNav }}" hint-placeholder-val="{{ false }}">
+    <button onClick="{{ toggleMenu }}" aria-label="Menü" style="display:inline-flex;align-items:center;gap:12px;height:44px;padding:0 16px;border-radius:4px;background:transparent;border:1px solid {{ navBorder }};color:{{ navInk }};font-size:15px;font-weight:500;cursor:pointer;">Menü <span style="font-size:16px;line-height:1;">{{ menuIcon }}</span></button>
+  </sc-if>
+  <sc-if value="{{ menuVisible }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;top:calc(100% + 10px);right:0;width:min(360px,calc(100vw - 32px));padding:10px;border-radius:6px;display:flex;flex-direction:column;background:{{ navBg }};border:1px solid {{ navBorder }};box-shadow:inset 0 1px 0 {{ navHighlight }},0 30px 60px -32px rgba(0,0,0,0.45);backdrop-filter:blur(20px) saturate(160%) {{ navBright }};-webkit-backdrop-filter:blur(20px) saturate(160%) {{ navBright }};">
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="6">
+        <a href="{{ n.href }}" onClick="{{ n.clickClose }}" style="padding:12px 14px;border-radius:4px;font-size:15px;font-weight:500;color:{{ navInk }};background:{{ n.bg }};" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.28) 0%,rgba(57,146,150,0.1) 100%);">{{ n.label }}</a>
+      </sc-for>
+    </div>
+  </sc-if>
+</header>
+
+<!-- 01 HERO -->
+<section id="top" data-screen-label="01 Hero" style="position:relative;background:#0E1213;color:#fff;overflow:hidden;">
+  <div style="display:grid;grid-template-columns:{{ heroCols }};">
+    <div style="padding:clamp(124px,15vh,144px) clamp(32px,4vw,64px) clamp(56px,8vh,80px) var(--px);display:flex;flex-direction:column;justify-content:center;">
+      <div data-reveal="" data-reveal-delay="80" style="display:flex;align-items:center;gap:16px;">
+        <span style="width:40px;height:2px;background:#399296;"></span>
+        <span style="font-size:14px;letter-spacing:0.16em;color:#7BC6C9;font-weight:600;text-transform:uppercase;">TERVEZŐKNEK</span>
+      </div>
+      <h1 data-reveal="" data-reveal-delay="180" style="margin:24px 0 0;max-width:680px;font-weight:500;font-size:clamp(40px,4vw,68px);line-height:1.02;letter-spacing:-0.035em;color:#fff;text-wrap:balance;">Designszabadság mérnöki biztonsággal.</h1>
+      <div data-reveal="" data-reveal-delay="280" style="margin-top:28px;max-width:600px;display:flex;flex-direction:column;gap:20px;">
+        <p style="margin:0;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.88);text-wrap:pretty;">A jó koncepció értéke akkor marad meg, ha a részletek a specifikáció és a kivitelezés során is ugyanazt az eredményt szolgálják.</p>
+        <p style="margin:0;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.72);text-wrap:pretty;">A SIMO a tervezői folyamatot inspirációval, műszaki dokumentációval, részletmegoldási egyeztetéssel és valós kivitelezési tapasztalattal támogatja. A cél, hogy a tér ne csak látványterven legyen erős, hanem jól specifikálható, műszakilag védhető és megvalósítható is maradjon.</p>
+      </div>
+      <div data-reveal="" data-reveal-delay="380" style="margin-top:32px;max-width:600px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.16);display:flex;flex-direction:column;align-items:flex-start;gap:20px;">
+        <p style="margin:0;font-size:24px;letter-spacing:-0.01em;color:#fff;">A koncepciótól a specifikációig - műszaki háttérrel.</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;">
+          <a href="#dokumentacio" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 26px;border-radius:4px;background:#399296;color:#fff;font-size:16px;font-weight:600;transition:background .2s;" style-hover="background:#2C7478;color:#fff;">Tervezői dokumentációk <span>→</span></a>
+          <a href="#kapcsolat" onClick="{{ pickB }}" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 24px;border-radius:4px;color:#fff;font-size:16px;font-weight:600;background:linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(16,20,21,0.18);border:1px solid rgba(255,255,255,0.12);box-shadow:inset 0 1px 0 rgba(255,255,255,0.34);backdrop-filter:blur(20px) saturate(160%) brightness(0.9);-webkit-backdrop-filter:blur(20px) saturate(160%) brightness(0.9);transition:background .2s,border-color .2s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04);border-color:rgba(120,200,204,0.5);color:#fff;">Specifikációs konzultáció</a>
+        </div>
+        <p style="margin:0;max-width:520px;font-size:15px;line-height:1.5;color:rgba(255,255,255,0.62);text-wrap:pretty;">Ha már van alaprajz, kiírás vagy egy nyitott részletkérdés, az egyeztetés indulhat a meglévő anyagokból.</p>
+      </div>
+    </div>
+    <div style="position:relative;min-height:{{ heroMediaH }};background:#1C2324;">
+      <div style="position:absolute;inset:0;overflow:hidden;"><div data-hero="" style="position:absolute;inset:0;"><img data-slot="t-hero" src="assets/images/placeholder.svg" alt="Erős projektfotó · tervezői tér üvegfallal" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;"></div></div>
+      <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(14,18,19,0.45) 0%,rgba(14,18,19,0) 22%);"></div>
+      
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <div data-reveal="glass" data-reveal-delay="520" style="position:absolute;left:32px;bottom:32px;width:clamp(180px,15vw,230px);aspect-ratio:4 / 3;border-radius:4px;overflow:hidden;border:1px solid rgba(255,255,255,0.22);box-shadow:0 30px 60px -32px rgba(0,0,0,0.6);">
+          <img data-slot="t-hero-cad" src="assets/images/placeholder.svg" alt="Részletrajz / CAD overlay" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;">
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<!-- 02 KIHÍVÁSOK -->
+<section id="kihivasok" data-screen-label="02 Kihívások" style="padding:clamp(72px,9vh,96px) var(--px);">
+  <div style="display:grid;grid-template-columns:{{ splitCols }};column-gap:24px;row-gap:24px;align-items:end;">
+    <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#8A7148;font-weight:600;">Tervezői kihívások</span></div>
+    <h2 style="margin:0;max-width:640px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">A koncepció értéke a részletekben marad meg.</h2></div>
+    <p data-reveal="" data-reveal-delay="120" style="margin:0;font-size:18px;line-height:1.6;color:#3B4446;text-wrap:pretty;">A tervezői kockázat ritkán az, hogy nincs elég inspiráció. Inkább az, hogy egy látványos megoldás nem írható ki egyértelműen, nem igazolható a szükséges teljesítmény, vagy a kivitelezés során kompromisszumossá válik.</p>
+  </div>
+  <div style="margin-top:48px;display:grid;grid-template-columns:{{ chCols }};column-gap:clamp(32px,4vw,64px);row-gap:24px;align-items:stretch;">
+    <div style="align-self:start;display:flex;flex-direction:column;padding:8px;border-radius:6px;background:rgba(255,255,255,0.6);border:1px solid rgba(16,20,21,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),0 24px 48px -36px rgba(16,20,21,0.35);">
+      <sc-for list="{{ challenges }}" as="c" hint-placeholder-count="4">
+        <button onClick="{{ c.select }}" onMouseEnter="{{ c.select }}" onFocus="{{ c.select }}" style="position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:8px;text-align:left;padding:22px 20px;background:{{ c.bg }};border:0;border-bottom:1px solid {{ c.sep }};border-radius:4px;cursor:pointer;color:#101415;transition:background .3s ease;">
+          <span style="position:absolute;left:0;top:0;bottom:0;width:2px;background:{{ c.bar }};transition:background .3s ease;"></span>
+          <span style="font-size:13px;font-weight:500;letter-spacing:0.02em;font-variant-numeric:tabular-nums;color:{{ c.numColor }};padding-top:7px;transition:color .3s;">{{ c.num }}</span>
+          <span style="display:block;min-width:0;">
+            <span style="display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:clamp(22px,1.8vw,26px);line-height:1.2;letter-spacing:-0.015em;font-weight:500;color:{{ c.color }};transition:color .3s;">{{ c.title }}<span style="font-size:18px;color:#399296;opacity:{{ c.arrOp }};translate:{{ c.arrX }} 0;transition:opacity .3s,translate .35s cubic-bezier(.2,.7,.2,1);">→</span></span>
+            <span style="display:grid;grid-template-rows:{{ c.rows }};transition:grid-template-rows .5s cubic-bezier(.2,.7,.2,1);">
+              <span style="overflow:hidden;display:block;">
+                <span style="display:block;padding-top:12px;font-size:18px;line-height:1.6;color:#3B4446;text-wrap:pretty;">{{ c.body }}</span>
+                
+              </span>
+            </span>
+          </span>
+        </button>
+      </sc-for>
+    </div>
+    <div style="position:relative;min-height:{{ chImgH }};height:100%;border-radius:4px;overflow:hidden;background:#E4E2DB;">
+      <sc-for list="{{ challenges }}" as="c" hint-placeholder-count="1">
+        <div style="position:absolute;inset:0;opacity:{{ c.op }};visibility:{{ c.vis }};transform:scale({{ c.scale }});transition:opacity .7s ease,visibility .7s,transform 1.4s cubic-bezier(.2,.7,.2,1);"><img data-slot="{{ c.slot }}" src="assets/images/placeholder.svg" alt="{{ c.ph }}" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;"></div>
+      </sc-for>
+      <div style="position:absolute;left:16px;bottom:16px;z-index:2;display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:6px;color:#fff;font-size:14px;font-weight:600;background:linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(22,58,60,0.36);border:1px solid rgba(255,255,255,0.14);box-shadow:inset 0 1px 0 rgba(255,255,255,0.3);backdrop-filter:blur(20px) saturate(160%) brightness(0.9);-webkit-backdrop-filter:blur(20px) saturate(160%) brightness(0.9);">
+        <span style="font-variant-numeric:tabular-nums;color:#7BC6C9;">{{ chActive.num }}</span><span>{{ chActive.proof }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 REFERENCIÁK -->
+<section id="referenciak" data-screen-label="03 Referenciák" style="background:#0E1213;color:#fff;padding:clamp(72px,9vh,96px) var(--px);">
+  <div style="display:grid;grid-template-columns:{{ splitCols }};column-gap:24px;row-gap:24px;align-items:end;">
+    <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#E3C79F;font-weight:600;">Inspirációs referenciák</span></div>
+    <h2 style="margin:0;max-width:640px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">Inspiráció, amely mögött műszaki logika is van.</h2></div>
+    <p data-reveal="" data-reveal-delay="120" style="margin:0;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.86);text-wrap:pretty;">A referencia itt ne pusztán portfólióelem legyen. Mutassa meg, hogyan vált egy tervezői szándék megvalósítható, részleteiben is következetes térré.</p>
+  </div>
+  <div onMouseLeave="{{ refLeave }}" style="margin-top:48px;display:grid;grid-template-columns:{{ refCols }};grid-template-rows:{{ refRows }};gap:16px;">
+    <sc-for list="{{ refs }}" as="r" hint-placeholder-count="3">
+      <article data-reveal="" data-reveal-delay="{{ r.delay }}" onMouseEnter="{{ r.enter }}" style="grid-column:{{ r.col }};grid-row:{{ r.row }};position:relative;min-height:{{ r.minH }};display:flex;flex-direction:column;justify-content:flex-end;border-radius:6px;overflow:hidden;border:1px solid {{ r.bd }};opacity:{{ r.op }};transition:border-color .35s ease,opacity .35s ease;">
+        <div style="position:absolute;inset:0;transform:scale({{ r.scale }});transition:transform 1.4s cubic-bezier(.2,.7,.2,1);"><img data-slot="{{ r.slot }}" src="assets/images/placeholder.svg" alt="{{ r.ph }}" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;"></div>
+        <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(8,11,12,0.9) 0%,rgba(8,11,12,0.4) 48%,rgba(8,11,12,0.1) 100%);"></div>
+        <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(57,146,150,0.38) 0%,rgba(57,146,150,0) 60%);opacity:{{ r.tint }};transition:opacity .35s ease;"></div>
+        <div style="position:absolute;top:16px;right:16px;width:{{ r.detW }};aspect-ratio:1 / 1;border-radius:4px;overflow:hidden;border:1px solid rgba(255,255,255,0.3);box-shadow:0 20px 40px -24px rgba(0,0,0,0.6);"><img data-slot="{{ r.detSlot }}" src="assets/images/placeholder.svg" alt="Részlet" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;"></div>
+        <div style="position:relative;padding:{{ r.pad }};padding-top:{{ r.padTop }};pointer-events:none;">
+          <div style="display:flex;flex-direction:column;gap:14px;padding:{{ r.gPad }};border-radius:6px;background:{{ r.glass }};border:1px solid {{ r.gbd }};box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),inset 0 -1px 0 rgba(255,255,255,0.06);backdrop-filter:blur(20px) saturate(160%) brightness(0.9);-webkit-backdrop-filter:blur(20px) saturate(160%) brightness(0.9);transition:background .35s ease,border-color .35s ease;">
+          <span style="font-size:13px;font-weight:500;letter-spacing:0.02em;font-variant-numeric:tabular-nums;color:#7BC6C9;">{{ r.num }}</span>
+          <h3 style="margin:0;font-size:{{ r.titleSize }};line-height:1.12;letter-spacing:-0.02em;font-weight:500;">{{ r.name }}</h3>
+          <div style="display:grid;grid-template-columns:{{ r.metaCols }};gap:10px 20px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.18);">
+            <sc-for list="{{ r.meta }}" as="m" hint-placeholder-count="3">
+              <div style="min-width:0;"><div style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,0.62);">{{ m.k }}</div><div style="margin-top:4px;font-size:15px;line-height:1.45;color:rgba(255,255,255,0.88);">{{ m.v }}</div></div>
+            </sc-for>
+          </div>
+          </div>
+        </div>
+      </article>
+    </sc-for>
+  </div>
+  <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:8px;">
+    <a href="homepage.html#referenciak" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 24px;border-radius:4px;color:#fff;font-size:16px;font-weight:600;background:linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(16,20,21,0.18);border:1px solid rgba(255,255,255,0.12);box-shadow:inset 0 1px 0 rgba(255,255,255,0.34);backdrop-filter:blur(20px) saturate(160%) brightness(0.9);-webkit-backdrop-filter:blur(20px) saturate(160%) brightness(0.9);transition:background .2s,border-color .2s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04);border-color:rgba(120,200,204,0.5);color:#fff;">Összes referencia <span>↗</span></a>
+    <a href="#muszaki-tamogatas" style="display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 14px;color:rgba(255,255,255,0.86);font-size:16px;font-weight:600;transition:color .2s;" style-hover="color:#7BC6C9;">Műszaki részletek megtekintése <span>→</span></a>
+  </div>
+</section>
+
+<!-- 04 MŰSZAKI TÁMOGATÁS -->
+<section id="muszaki-tamogatas" data-screen-label="04 Műszaki támogatás" style="padding:clamp(72px,9vh,96px) var(--px);">
+  <div style="display:grid;grid-template-columns:{{ supCols }};column-gap:clamp(32px,4vw,72px);row-gap:40px;align-items:start;">
+    <div style="display:flex;flex-direction:column;gap:28px;position:{{ supPos }};top:120px;">
+      <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#8A7148;font-weight:600;">Műszaki támogatás</span></div>
+      <h2 style="margin:0;max-width:560px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">Műszaki háttér a tervezői döntés mögött.</h2></div>
+      <p data-reveal="" data-reveal-delay="100" style="margin:0;max-width:560px;font-size:18px;line-height:1.6;color:#3B4446;text-wrap:pretty;">A specifikáció előtt meghozott néhány pontos döntés sok későbbi kérdést megelőzhet. A SIMO műszaki támogatásának feladata, hogy a tervezői szándékot a rendszer, a dokumentáció és a megvalósítás logikájával összekapcsolja.</p>
+      <div data-reveal="" data-reveal-delay="160" style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="#kapcsolat" onClick="{{ pickB }}" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 26px;border-radius:4px;background:#399296;color:#fff;font-size:16px;font-weight:600;transition:background .2s;" style-hover="background:#2C7478;color:#fff;">Specifikációs konzultáció <span>→</span></a>
+        <a href="#kapcsolat" onClick="{{ pickB }}" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 24px;border-radius:4px;border:1px solid rgba(16,20,21,0.3);color:#101415;font-size:16px;font-weight:600;transition:background .2s,border-color .2s,color .2s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.18) 0%,rgba(57,146,150,0.06) 100%);border-color:#399296;color:#101415;">Műszaki kérdés küldése</a>
+      </div>
+      <div data-reveal="" data-reveal-delay="220" style="position:relative;height:{{ supImgH }};border-radius:4px;overflow:hidden;background:#E4E2DB;">
+        <div data-parallax="0.04" style="position:absolute;left:0;right:0;top:-24px;bottom:-24px;"><img data-slot="t-support" src="assets/images/placeholder.svg" alt="Csomópont / részletrajz · műszaki részlet" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;"></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <sc-for list="{{ supports }}" as="s" hint-placeholder-count="4">
+        <div data-reveal="" data-reveal-delay="{{ s.delay }}" onMouseEnter="{{ s.enter }}" onMouseLeave="{{ supLeave }}" style="position:relative;display:grid;grid-template-columns:{{ supItemCols }};column-gap:24px;row-gap:16px;padding:28px;border-radius:6px;background:{{ s.bg }};border:1px solid {{ s.bd }};box-shadow:inset 0 1px 0 rgba(255,255,255,0.9),0 24px 48px -36px rgba(16,20,21,0.35);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);transition:background .3s ease,border-color .3s ease;">
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            
+            <span style="font-size:13px;font-weight:500;letter-spacing:0.02em;font-variant-numeric:tabular-nums;color:#399296;">{{ s.num }}</span>
+          </div>
+          <div>
+            <h3 style="margin:0;font-size:clamp(24px,2vw,30px);line-height:1.18;letter-spacing:-0.02em;font-weight:500;text-wrap:balance;">{{ s.title }}</h3>
+            <p style="margin:12px 0 0;max-width:560px;font-size:18px;line-height:1.6;color:#3B4446;text-wrap:pretty;">{{ s.body }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 05 DOKUMENTÁCIÓ -->
+<section id="dokumentacio" data-screen-label="05 Dokumentáció" style="background:#0E1213;color:#fff;padding:clamp(72px,9vh,96px) var(--px);">
+  <div style="display:grid;grid-template-columns:{{ splitCols }};column-gap:24px;row-gap:24px;align-items:end;">
+    <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#E3C79F;font-weight:600;">Letölthető dokumentációk</span></div>
+    <h2 style="margin:0;max-width:680px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">Dokumentáció, amit be lehet építeni a tervezési folyamatba.</h2></div>
+    <p data-reveal="" data-reveal-delay="120" style="margin:0;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.86);text-wrap:pretty;">A tervezői aloldal egyik legfontosabb funkciója a releváns műszaki anyagok gyors elérése. A dokumentáció ne különálló PDF-archívum legyen, hanem a specifikációt segítő, kereshető tudásréteg.</p>
+  </div>
+
+  <div data-reveal="" style="margin-top:48px;border-radius:6px;overflow:hidden;background:linear-gradient(155deg,rgba(255,255,255,0.08) 0%,rgba(255,255,255,0.03) 42%,rgba(255,255,255,0.01) 100%),rgba(22,58,60,0.22);border:1px solid rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.22);">
+    
+    <div style="display:grid;grid-template-columns:{{ docCols }};">
+      <div style="display:flex;flex-direction:{{ docRailDir }};overflow-x:auto;border-right:{{ docRailBr }};border-bottom:{{ docRailBb }};padding:8px;gap:4px;">
+        <sc-for list="{{ docCats }}" as="d" hint-placeholder-count="6">
+          <button onClick="{{ d.select }}" style="flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;padding:14px 16px;border-radius:4px;cursor:pointer;color:#fff;font-size:16px;font-weight:{{ d.fw }};background:{{ d.bg }};border:1px solid {{ d.bd }};opacity:{{ d.op }};white-space:nowrap;transition:background .3s ease,border-color .3s ease,opacity .3s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04);border-color:rgba(120,200,204,0.5);">
+            <span style="display:flex;align-items:center;gap:12px;"><span style="font-size:13px;font-variant-numeric:tabular-nums;color:#7BC6C9;">{{ d.num }}</span>{{ d.name }}</span>
+            <span style="font-size:14px;color:#7BC6C9;opacity:{{ d.arrOp }};">→</span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:24px;min-height:360px;">
+        <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;">
+          <div>
+            <div style="font-size:13px;font-variant-numeric:tabular-nums;color:#7BC6C9;">{{ docActive.num }}</div>
+            <h3 style="margin:8px 0 0;font-size:clamp(24px,2vw,30px);line-height:1.18;letter-spacing:-0.02em;font-weight:500;">{{ docActive.name }}</h3>
+            <p style="margin:8px 0 0;font-size:16px;line-height:1.5;color:rgba(255,255,255,0.72);">{{ docActive.note }}</p>
+          </div>
+          
+        </div>
+        <div style="display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.12);">
+          <sc-for list="{{ docRows }}" as="f" hint-placeholder-count="3">
+            <div style="display:grid;grid-template-columns:{{ fileCols }};align-items:center;column-gap:20px;row-gap:6px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.12);">
+              <span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:4px;background:rgba(57,146,150,0.18);border:1px solid rgba(120,200,204,0.35);font-size:12px;font-weight:600;letter-spacing:0.04em;color:#7BC6C9;">{{ f.ext }}</span>
+              <span style="min-width:0;font-size:16px;color:rgba(255,255,255,0.9);">{{ f.name }}</span>
+              <span style="font-size:14px;color:rgba(255,255,255,0.56);">{{ f.meta }}</span>
+              <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,0.22);color:rgba(255,255,255,0.5);font-size:15px;" title="A fájl jóváhagyás után válik letölthetővé">↓</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-reveal="" style="margin-top:16px;display:grid;grid-template-columns:{{ pkgCols }};gap:0;border-radius:6px;overflow:hidden;border:1px solid rgba(120,200,204,0.45);background:linear-gradient(155deg,rgba(57,146,150,0.42) 0%,rgba(57,146,150,0.14) 100%),rgba(255,255,255,0.04);box-shadow:inset 0 1px 0 rgba(255,255,255,0.32);">
+    <div style="padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:20px;">
+      <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;color:#BFE3E5;">Kiemelt csomag</div>
+      <h3 style="margin:0;font-size:clamp(28px,2.4vw,40px);line-height:1.1;letter-spacing:-0.025em;font-weight:500;">Tervezői specifikációs indulócsomag</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <sc-for list="{{ pkgItems }}" as="k" hint-placeholder-count="5">
+          <span style="display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;font-size:14px;font-weight:500;color:#fff;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);">{{ k.t }}</span>
+        </sc-for>
+      </div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:rgba(255,255,255,0.72);">[A csomag végleges tartalma a ténylegesen rendelkezésre álló anyagok szerint]</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="#kapcsolat" onClick="{{ pickA }}" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 24px;border-radius:4px;color:#fff;font-size:16px;font-weight:600;background:linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(16,20,21,0.18);border:1px solid rgba(255,255,255,0.12);box-shadow:inset 0 1px 0 rgba(255,255,255,0.34);backdrop-filter:blur(20px) saturate(160%) brightness(0.9);-webkit-backdrop-filter:blur(20px) saturate(160%) brightness(0.9);transition:background .2s,border-color .2s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04);border-color:rgba(120,200,204,0.5);color:#fff;">Tervezői specifikációs csomag <span>→</span></a>
+        <a href="homepage.html#dokumentacio" style="display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 14px;color:rgba(255,255,255,0.86);font-size:16px;font-weight:600;transition:color .2s;" style-hover="color:#7BC6C9;">Összes dokumentáció <span>↗</span></a>
+      </div>
+    </div>
+    <div style="position:relative;min-height:{{ pkgImgH }};"><div style="position:absolute;inset:0;">
+      <img data-slot="t-package" src="assets/images/placeholder.svg" alt="Csomag preview · BIM/CAD + részletrajz" draggable="false" style="display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;object-position:50% 50%;">
+    </div></div>
+  </div>
+</section>
+
+<!-- 06 CSAPATNAK -->
+<section id="csapatnak" data-screen-label="06 Csapatnak tovább" style="background:#0F2E30;color:#fff;padding:clamp(72px,9vh,96px) var(--px);overflow:hidden;">
+  <div style="display:grid;grid-template-columns:{{ teamCols }};column-gap:clamp(32px,5vw,96px);row-gap:48px;align-items:center;">
+    <div data-reveal="" style="order:{{ teamPreviewOrder }};position:relative;display:flex;justify-content:center;">
+      <div style="position:relative;width:100%;max-width:520px;aspect-ratio:210 / 297;border-radius:4px;background:#F4F3EF;color:#101415;box-shadow:0 40px 80px -40px rgba(0,0,0,0.7),0 0 0 1px rgba(255,255,255,0.08);padding:clamp(20px,2.6vw,36px);display:flex;flex-direction:column;gap:clamp(10px,1.2vw,16px);overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <img src="./assets/simo-logo.png" alt="SIMO" style="height:28px;width:auto;">
+          <span style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#6E7779;font-weight:600;">PDF · 1–2 oldal</span>
+        </div>
+        <div style="height:2px;background:#399296;"></div>
+        <div style="font-size:clamp(18px,1.6vw,24px);line-height:1.15;letter-spacing:-0.015em;font-weight:600;">Tervezői egyeztetési lap</div>
+        <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,minmax(0,1fr));gap:8px;">
+          <sc-for list="{{ team }}" as="t" hint-placeholder-count="6">
+            <div style="position:relative;padding:10px 12px;border-radius:4px;border:1px solid {{ t.pbd }};background:{{ t.pbg }};transition:background .3s ease,border-color .3s ease;display:flex;flex-direction:column;gap:6px;overflow:hidden;">
+              <span style="font-size:11px;font-weight:600;color:#399296;font-variant-numeric:tabular-nums;">{{ t.num }}</span>
+              <span style="font-size:clamp(11px,0.9vw,13px);line-height:1.3;font-weight:600;">{{ t.title }}</span>
+              <span style="display:block;height:4px;width:86%;border-radius:2px;background:rgba(16,20,21,0.1);"></span>
+              <span style="display:block;height:4px;width:64%;border-radius:2px;background:rgba(16,20,21,0.1);"></span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+    <div style="order:{{ teamTextOrder }};">
+      <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#E3C79F;font-weight:600;">Mit vigyél tovább a csapatodnak?</span></div>
+      <h2 style="margin:0;max-width:640px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">A jó specifikáció közös nyelvet teremt a projektben.</h2></div>
+      <p data-reveal="" data-reveal-delay="100" style="margin:24px 0 0;max-width:640px;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.86);text-wrap:pretty;">A tervezői döntés akkor működik jól, ha a következő szereplő is ugyanazt érti alatta. Ezért az oldal adjon olyan rövid, továbbküldhető összefoglalót is, amely egy belső egyeztetésen, műszaki koordináción vagy tender-előkészítésben azonnal használható.</p>
+      <div onMouseLeave="{{ teamLeave }}" style="margin-top:32px;display:grid;grid-template-columns:{{ teamItemCols }};border-top:1px solid rgba(255,255,255,0.16);">
+        <sc-for list="{{ team }}" as="t" hint-placeholder-count="6">
+          <div onMouseEnter="{{ t.enter }}" style="padding:18px 16px 18px 0;padding-left:{{ t.pl }};border-bottom:1px solid rgba(255,255,255,0.16);border-left:{{ t.bl }};background:{{ t.bg }};transition:background .3s ease;cursor:default;">
+            <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-size:13px;font-variant-numeric:tabular-nums;color:#7BC6C9;">{{ t.num }}</span><span style="font-size:18px;font-weight:600;line-height:1.3;">{{ t.title }}</span></div>
+            <div style="margin-top:6px;font-size:16px;line-height:1.5;color:rgba(255,255,255,0.74);">{{ t.body }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;">
+        <a href="#" onClick="{{ pdfClick }}" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 26px;border-radius:4px;background:#399296;color:#fff;font-size:16px;font-weight:600;transition:background .2s;" style-hover="background:#2C7478;color:#fff;">Tervezői egyeztetési lap letöltése <span>↓</span></a>
+        <a href="#kapcsolat" onClick="{{ pickB }}" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 24px;border-radius:4px;color:#fff;font-size:16px;font-weight:600;background:linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(16,20,21,0.18);border:1px solid rgba(255,255,255,0.12);box-shadow:inset 0 1px 0 rgba(255,255,255,0.34);backdrop-filter:blur(20px) saturate(160%) brightness(0.9);-webkit-backdrop-filter:blur(20px) saturate(160%) brightness(0.9);transition:background .2s,border-color .2s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04);border-color:rgba(120,200,204,0.5);color:#fff;">Specifikációs konzultáció</a>
+        <sc-if value="{{ pdfNote }}" hint-placeholder-val="{{ false }}"></sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 WORKFLOW -->
+<section id="workflow" data-screen-label="07 Workflow" style="padding:clamp(72px,9vh,96px) var(--px);">
+  <div style="display:grid;grid-template-columns:{{ splitCols }};column-gap:24px;row-gap:24px;align-items:end;">
+    <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#8A7148;font-weight:600;">Tervezői workflow</span></div>
+    <h2 style="margin:0;max-width:640px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">Az inspirációtól a specifikációig.</h2></div>
+    <p data-reveal="" data-reveal-delay="120" style="margin:0;font-size:18px;line-height:1.6;color:#3B4446;text-wrap:pretty;">A workflow-blokk mutassa meg, hogy a SIMO mikor és miben tud belépni a tervezési folyamatba. A cél a korai egyeztetés normalizálása: nem kell kész tender ahhoz, hogy egy kritikus részletet műszakilag validáljunk.</p>
+  </div>
+
+  <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+    <div style="margin-top:56px;">
+      <div style="position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));column-gap:16px;">
+        <div style="position:absolute;left:10%;right:10%;top:23px;height:2px;background:rgba(16,20,21,0.12);"></div>
+        <div style="position:absolute;left:10%;top:23px;height:2px;width:{{ wfFill }};background:#399296;transition:width .6s cubic-bezier(.2,.7,.2,1);"></div>
+        <div style="position:absolute;left:calc(20% + 3px);width:calc(40% - 6px);top:-34px;height:20px;border:1px solid rgba(57,146,150,0.55);border-bottom:0;border-radius:4px 4px 0 0;display:flex;justify-content:center;">
+          <span style="position:relative;top:-11px;padding:0 10px;background:#F4F3EF;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#2C7478;white-space:nowrap;">Dokumentáció · Konzultáció</span>
+        </div>
+        <sc-for list="{{ wf }}" as="w" hint-placeholder-count="5">
+          <button onClick="{{ w.select }}" onMouseEnter="{{ w.select }}" onFocus="{{ w.select }}" style="position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;background:none;border:0;padding:0 0 20px;cursor:pointer;color:#101415;">
+            <span style="position:relative;z-index:1;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;background:{{ w.dotBg }};color:{{ w.dotInk }};border:1px solid {{ w.dotBd }};box-shadow:{{ w.dotSh }};transition:background .35s,color .35s,border-color .35s,box-shadow .35s;">{{ w.num }}</span>
+            <span style="font-size:clamp(17px,1.4vw,20px);font-weight:600;line-height:1.25;text-align:center;color:{{ w.ink }};transition:color .3s;">{{ w.title }}</span>
+            <span style="position:absolute;left:20%;right:20%;bottom:0;height:2px;background:#399296;transform-origin:center;transform:scaleX({{ w.line }});transition:transform .45s cubic-bezier(.2,.7,.2,1);"></span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="margin-top:24px;display:grid;">
+        <sc-for list="{{ wf }}" as="w" hint-placeholder-count="1">
+          <div style="grid-area:1 / 1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;opacity:{{ w.op }};visibility:{{ w.vis }};translate:0 {{ w.y }};transition:opacity .5s ease,visibility .5s,translate .6s cubic-bezier(.2,.7,.2,1);">
+            <div style="padding:28px;border-radius:6px;background:rgba(255,255,255,0.6);border:1px solid rgba(16,20,21,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.9);">
+              <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;color:#8A7148;">Tervezői döntés</div>
+              <p style="margin:12px 0 0;font-size:clamp(20px,1.6vw,24px);line-height:1.35;letter-spacing:-0.01em;color:#101415;text-wrap:pretty;">{{ w.dec }}</p>
+            </div>
+            <div style="padding:28px;border-radius:6px;background:linear-gradient(155deg,rgba(57,146,150,0.2) 0%,rgba(57,146,150,0.06) 100%),rgba(255,255,255,0.5);border:1px solid rgba(57,146,150,0.4);box-shadow:inset 0 1px 0 rgba(255,255,255,0.9);">
+              <div style="font-size:12px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;color:#2C7478;">SIMO támogatás</div>
+              <p style="margin:12px 0 0;font-size:clamp(20px,1.6vw,24px);line-height:1.35;letter-spacing:-0.01em;color:#101415;text-wrap:pretty;">{{ w.sup }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+    <div style="margin-top:40px;border-left:2px solid rgba(57,146,150,0.4);padding-left:24px;display:flex;flex-direction:column;gap:32px;">
+      <sc-for list="{{ wf }}" as="w" hint-placeholder-count="5">
+        <article data-reveal="" style="position:relative;">
+          <span style="position:absolute;left:-33px;top:2px;width:16px;height:16px;border-radius:50%;background:{{ w.mDot }};border:2px solid #F4F3EF;box-shadow:0 0 0 1px #399296;"></span>
+          <div style="display:flex;gap:10px;align-items:baseline;"><span style="font-size:13px;font-variant-numeric:tabular-nums;color:#399296;">{{ w.num }}</span><h3 style="margin:0;font-size:22px;line-height:1.2;font-weight:500;">{{ w.title }}</h3></div>
+          <sc-if value="{{ w.docs }}" hint-placeholder-val="{{ false }}"><span style="display:inline-block;margin-top:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;color:#2C7478;">Dokumentáció · Konzultáció</span></sc-if>
+          <div style="margin-top:12px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#8A7148;">Tervezői döntés</div>
+          <p style="margin:4px 0 0;font-size:18px;line-height:1.55;color:#3B4446;">{{ w.dec }}</p>
+          <div style="margin-top:12px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;color:#2C7478;">SIMO támogatás</div>
+          <p style="margin:4px 0 0;font-size:18px;line-height:1.55;color:#3B4446;">{{ w.sup }}</p>
+        </article>
+      </sc-for>
+    </div>
+  </sc-if>
+</section>
+
+<!-- 08 KAPCSOLAT -->
+<section id="kapcsolat" data-screen-label="08 Kapcsolat" style="position:relative;background:#0E1213;color:#fff;padding:clamp(72px,9vh,96px) var(--px);overflow:hidden;">
+  <div style="display:grid;grid-template-columns:{{ contactCols }};column-gap:clamp(32px,5vw,96px);row-gap:48px;align-items:start;">
+    <div>
+      <div data-reveal=""><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="width:48px;height:1px;background:#CA9E65;"></span><span style="font-size:14px;letter-spacing:0.16em;text-transform:uppercase;color:#E3C79F;font-weight:600;">Specifikációs konzultáció</span></div>
+      <h2 style="margin:0;max-width:600px;font-size:clamp(32px,2.9vw,50px);line-height:1.06;letter-spacing:-0.03em;font-weight:500;text-wrap:balance;">Van egy részlet, amit érdemes a kiírás előtt lezárni?</h2></div>
+      <p data-reveal="" data-reveal-delay="100" style="margin:24px 0 0;max-width:600px;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.86);text-wrap:pretty;">A műszaki egyeztetés akkor is hasznos lehet, ha a projekt még koncepció- vagy tervezési fázisban van. Ha már rendelkezésre áll alaprajz, koncepció, kiírás vagy konkrét részletkérdés, az egyeztetés ezekből indulhat.</p>
+      <div style="margin-top:32px;display:flex;flex-direction:column;gap:12px;">
+        <sc-for list="{{ opts }}" as="o" hint-placeholder-count="2">
+          <button onClick="{{ o.select }}" style="display:grid;grid-template-columns:40px minmax(0,1fr) auto;column-gap:16px;align-items:start;text-align:left;padding:20px;border-radius:6px;cursor:pointer;color:#fff;background:{{ o.bg }};border:1px solid {{ o.bd }};box-shadow:{{ o.sh }};transition:background .3s ease,border-color .3s ease,box-shadow .3s ease;" style-hover="border-color:rgba(120,200,204,0.5);">
+            <span style="width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;background:{{ o.kBg }};border:1px solid {{ o.kBd }};transition:background .3s,border-color .3s;">{{ o.k }}</span>
+            <span><span style="display:block;font-size:20px;font-weight:600;line-height:1.25;">{{ o.title }}</span><span style="display:block;margin-top:6px;font-size:16px;line-height:1.5;color:rgba(255,255,255,0.76);">{{ o.body }}</span></span>
+            <span style="font-size:14px;font-weight:600;color:#7BC6C9;white-space:nowrap;padding-top:4px;">{{ o.cta }}</span>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div data-reveal="glass" data-reveal-delay="120" style="padding:clamp(24px,3vw,40px);border-radius:6px;background:linear-gradient(155deg,rgba(255,255,255,0.12) 0%,rgba(255,255,255,0.04) 42%,rgba(255,255,255,0.02) 100%),rgba(22,58,60,0.26);border:1px solid rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),0 30px 60px -32px rgba(0,0,0,0.45);">
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:18px;">
+          <div style="display:grid;grid-template-columns:{{ formCols }};gap:18px;">
+            <label style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);">Név*</span><input required="" name="nev" style="height:52px;padding:0 16px;border-radius:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:16px;outline:none;" style-focus="border-color:#399296;background:rgba(57,146,150,0.1);"></label>
+            <label style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);">Cég / tervezőiroda*</span><input required="" name="ceg" style="height:52px;padding:0 16px;border-radius:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:16px;outline:none;" style-focus="border-color:#399296;background:rgba(57,146,150,0.1);"></label>
+            <label style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);">E-mail*</span><input required="" type="email" name="email" style="height:52px;padding:0 16px;border-radius:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:16px;outline:none;" style-focus="border-color:#399296;background:rgba(57,146,150,0.1);"></label>
+            <label style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);">Projekt neve / helyszíne <span style="font-weight:400;color:rgba(255,255,255,0.56);">[opcionális]</span></span><input name="projekt" style="height:52px;padding:0 16px;border-radius:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:16px;outline:none;" style-focus="border-color:#399296;background:rgba(57,146,150,0.1);"></label>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);">Projektfázis</span>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <sc-for list="{{ phases }}" as="p" hint-placeholder-count="5">
+                <button type="button" onClick="{{ p.select }}" style="height:44px;padding:0 16px;border-radius:999px;cursor:pointer;font-size:15px;font-weight:500;color:#fff;background:{{ p.bg }};border:1px solid {{ p.bd }};transition:background .3s,border-color .3s;" style-hover="background:linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04);border-color:rgba(120,200,204,0.5);">{{ p.t }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <label style="display:flex;flex-direction:column;gap:8px;"><span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);">Miben kér támogatást?</span><textarea name="tamogatas" rows="4" style="padding:14px 16px;border-radius:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:16px;line-height:1.5;outline:none;resize:vertical;" style-focus="border-color:#399296;background:rgba(57,146,150,0.1);"></textarea></label>
+          <label style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px;border-radius:4px;border:1px dashed rgba(255,255,255,0.26);cursor:pointer;transition:border-color .3s,background .3s;" style-hover="border-color:#399296;background:rgba(57,146,150,0.08);">
+            <span style="display:flex;flex-direction:column;gap:4px;"><span style="font-size:14px;font-weight:600;color:rgba(255,255,255,0.86);">Dokumentum feltöltése: alaprajz / részletrajz / kiírás <span style="font-weight:400;color:rgba(255,255,255,0.56);">[opcionális]</span></span><span style="font-size:14px;color:#7BC6C9;">{{ fileLabel }}</span></span>
+            <span style="font-size:18px;color:#7BC6C9;">↑</span>
+            <input type="file" multiple="" onChange="{{ onFile }}" style="display:none;">
+          </label>
+          <button type="submit" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 26px;border-radius:4px;background:#399296;color:#fff;font-size:16px;font-weight:600;transition:background .2s;align-self:flex-start;cursor:pointer;border:0;" style-hover="background:#2C7478;color:#fff;">{{ submitLabel }} <span>→</span></button>
+          <p style="margin:0;font-size:13px;line-height:1.5;color:rgba(255,255,255,0.56);">[adatkezelési szöveg]</p>
+        </form>
+      </sc-if>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:16px;min-height:320px;justify-content:center;">
+          <span style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#399296;font-size:22px;">✓</span>
+          <p style="margin:0;font-size:24px;letter-spacing:-0.01em;">[Visszaigazoló üzenet]</p>
+          <button onClick="{{ reset }}" style="align-self:flex-start;height:44px;padding:0 16px;border-radius:4px;background:transparent;border:1px solid rgba(255,255,255,0.22);color:#fff;font-size:15px;cursor:pointer;" style-hover="border-color:rgba(120,200,204,0.5);">←</button>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<footer data-screen-label="09 Lábléc" style="position:relative;overflow:hidden;background:#0E1213;color:#fff;padding:0 var(--px) 40px;">
+  <div style="position:relative;border-radius:6px;padding:clamp(32px,4vw,64px) clamp(24px,4vw,56px) 32px;background:linear-gradient(155deg,rgba(255,255,255,0.12) 0%,rgba(255,255,255,0.04) 42%,rgba(255,255,255,0.02) 100%),rgba(22,58,60,0.26);border:1px solid rgba(255,255,255,0.08);box-shadow:inset 0 1px 0 rgba(255,255,255,0.3);">
+    <div style="display:grid;grid-template-columns:{{ footCols }};column-gap:24px;row-gap:32px;align-items:start;">
+      <div style="display:flex;flex-direction:column;gap:28px;">
+        <img src="./assets/simo-logo-white.png" alt="SIMO Group" style="height:96px;width:auto;align-self:flex-start;">
+        <span style="font-size:12px;letter-spacing:0.16em;color:#E3C79F;font-weight:600;text-transform:uppercase;">THE ARCHITECTURE OF POSSIBILITY</span>
+      </div>
+      <nav style="display:flex;flex-direction:column;gap:14px;">
+        <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="6">
+          <a href="{{ n.href }}" onClick="{{ n.click }}" style="font-size:18px;color:rgba(255,255,255,0.78);" style-hover="color:#fff;">{{ n.label }}</a>
+        </sc-for>
+      </nav>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:18px;color:rgba(255,255,255,0.78);">
+        <span style="color:#fff;font-weight:600;">SIMO GROUP</span>
+        <span>[telefonszám]</span><span>[e-mail-cím]</span><span>[cím]</span>
+      </div>
+    </div>
+    <div style="margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;gap:16px;font-size:13px;color:rgba(255,255,255,0.62);">
+      <span>© SIMO Group</span>
+      <a href="#top" style="color:rgba(255,255,255,0.7);" style-hover="color:#fff;">Vissza a tetejére ↑</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { hoverNav: -1, scrolled: false, vw: 1440, menuOpen: false, ch: 0, ref: -1, sup: -1, doc: 0, q: '', team: -1, wf: 0, opt: 'B', phase: -1, sent: false, files: 0, pdfNote: false };
+
+  setupMotion() {
+    const ease = 'cubic-bezier(.2,.7,.2,1)';
+    if (!this.io) this.io = new IntersectionObserver(entries => entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const el = en.target; el.style.opacity = '1'; el.style.translate = '0 0'; this.io.unobserve(el);
+    }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.__rv) return; el.__rv = 1;
+      const d = Math.round(+(el.getAttribute('data-reveal-delay') || 0) * 0.75);
+      const base = el.style.transition ? el.style.transition + ',' : '';
+      el.style.transition = base + 'opacity 650ms ' + ease + ' ' + d + 'ms, translate 650ms ' + ease + ' ' + d + 'ms';
+      el.style.opacity = '0'; el.style.translate = el.getAttribute('data-reveal') === 'glass' ? '0 12px' : '0 16px';
+      this.io.observe(el);
+    });
+    const hero = document.querySelector('[data-hero]');
+    if (hero && !hero.__hr) { hero.__hr = 1; hero.style.scale = '1.08'; hero.style.transition = 'scale 14s ' + ease; requestAnimationFrame(() => requestAnimationFrame(() => { hero.style.scale = '1'; })); }
+  }
+  parallax() {
+    const vh = window.innerHeight;
+    document.querySelectorAll('[data-parallax]').forEach(el => {
+      const box = el.parentElement.getBoundingClientRect();
+      if (box.bottom < -200 || box.top > vh + 200) return;
+      el.style.translate = '0 ' + (-(box.top + box.height / 2 - vh / 2) * parseFloat(el.getAttribute('data-parallax'))).toFixed(1) + 'px';
+    });
+  }
+  componentDidMount() {
+    this.onScroll = () => { if (this.raf) return; this.raf = requestAnimationFrame(() => { this.raf = 0; this.parallax(); const sc = window.scrollY > 520; if (sc !== this.state.scrolled) this.setState({ scrolled: sc }); }); };
+    this.onResize = () => this.setState({ vw: window.innerWidth });
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    this.onResize(); this.setupMotion(); this.parallax();
+    this.motionT = setTimeout(() => { this.setupMotion(); this.parallax(); }, 600);
+  }
+  componentDidUpdate() { this.setupMotion(); }
+  componentWillUnmount() { clearTimeout(this.motionT); if (this.io) this.io.disconnect(); window.removeEventListener('scroll', this.onScroll); window.removeEventListener('resize', this.onResize); }
+
+  renderVals() {
+    const S = this.state, light = S.scrolled, wide = S.vw >= 1024, mid = S.vw >= 760;
+    const pad = n => String(n).padStart(2, '0');
+    const HOV = 'linear-gradient(155deg,rgba(57,146,150,0.34) 0%,rgba(57,146,150,0.12) 100%),rgba(255,255,255,0.04)';
+    const ACT = 'linear-gradient(155deg,rgba(57,146,150,0.5) 0%,rgba(57,146,150,0.2) 100%),rgba(255,255,255,0.06)';
+    const GL = 'linear-gradient(155deg,rgba(255,255,255,0.1) 0%,rgba(255,255,255,0.03) 100%)';
+
+    const navDefs = [['Főoldal', 'homepage.html'], ['Rólunk', 'rolunk.html'], ['Referenciák', 'homepage.html#referenciak'], ['Műszaki / Termék Központ', '#muszaki-tamogatas'], ['Műszaki Dokumentumtár', '#dokumentacio'], ['Tudástár', 'homepage.html#tudastar'], ['Kapcsolat', '#kapcsolat']];
+    const navItems = navDefs.map(([label, href], i) => {
+      const hov = S.hoverNav === i;
+      return { label, href,
+        bg: hov ? (light ? 'linear-gradient(155deg,rgba(57,146,150,0.16) 0%,rgba(57,146,150,0.06) 100%)' : HOV) : 'transparent',
+        bd: hov ? (light ? 'rgba(57,146,150,0.35)' : 'rgba(120,200,204,0.5)') : 'transparent',
+        sh: hov ? (light ? 'inset 0 1px 0 rgba(255,255,255,0.8)' : 'inset 0 1px 0 rgba(255,255,255,0.32)') : 'none',
+        enter: () => this.setState({ hoverNav: i }), click: () => {}, clickClose: () => this.setState({ menuOpen: false }) };
+    });
+
+    const chSrc = [
+      ['Specifikálhatóság', 'A választott rendszernek olyan műszaki és dokumentációs háttérrel kell rendelkeznie, amely alapján a döntés egyértelműen továbbvihető a projekt következő szereplőihez.', 'Rajzrészlet · specifikációs dokumentáció', 'Rajzrészlet'],
+      ['Részletek és csatlakozások', 'A térélmény sokszor a csomópontokon, ajtókapcsolatokon és szerkezeti találkozásokon múlik. Ezeket érdemes még a kivitelezés előtt lezárni.', 'Csomópont · ajtócsatlakozás részletfotó', 'Csomópont'],
+      ['Használat és teljesítmény', 'A vizuális koncepciónak a használati elvárásokkal is együtt kell működnie: például akusztikai komforttal, privát működéssel és a tér funkcionális szerepével.', 'Projektpélda · tárgyaló / privát tér', 'Projektpélda'],
+      ['Kivitelezhetőség', 'A tervezői szándék akkor védhető, ha a gyártási és helyszíni megvalósítás logikája is ismert. A korai műszaki validáció csökkenti a későbbi kompromisszumok esélyét.', 'Részletfotó · gyártás / helyszíni szerelés', 'Részletfotó']
+    ];
+    const challenges = chSrc.map(([title, body, ph, proof], i) => { const on = S.ch === i;
+      return { title, body, ph, proof, num: pad(i + 1), slot: 't-ch-' + (i + 1), rows: on ? '1fr' : '0fr', color: on ? '#101415' : '#4A5456', numColor: on ? '#399296' : '#8B9294', bar: on ? '#399296' : 'transparent', bg: on ? 'linear-gradient(155deg,rgba(57,146,150,0.18) 0%,rgba(57,146,150,0.05) 100%)' : 'transparent', arrOp: on ? 1 : 0, sep: i === 3 ? 'transparent' : 'rgba(16,20,21,0.1)', arrX: on ? '0px' : '-6px', op: on ? 1 : 0, vis: on ? 'visible' : 'hidden', scale: on ? 1 : 1.04, select: () => { if (S.ch !== i) this.setState({ ch: i }); } }; });
+
+    const refs = [1, 2, 3].map((n, i) => { const hot = S.ref === i, dim = S.ref >= 0 && !hot, big = wide && i === 0;
+      return { num: pad(n), name: '[Referencia #' + n + ' neve]', slot: 't-ref-' + n, detSlot: 't-ref-' + n + '-detail', ph: 'Referencia #' + n + ' · nagy projektfotó',
+        meta: [{ k: 'Tervezői cél', v: '[tervezői cél]' }, { k: 'Fő téralkotási gondolat', v: '[fő téralkotási gondolat]' }, { k: 'SIMO megoldás és proof', v: '[konkrét SIMO megoldás és proof]' }],
+        col: wide ? (i === 0 ? '1' : '2') : 'auto', row: wide ? (i === 0 ? '1 / span 2' : String(i)) : 'auto',
+        minH: wide ? '0px' : (mid ? '420px' : '460px'), detW: big ? 'clamp(120px,11vw,170px)' : 'clamp(84px,7vw,112px)',
+        pad: big ? 'clamp(16px,2vw,24px)' : '16px', gPad: big ? 'clamp(20px,2.2vw,28px)' : '20px',
+        glass: hot ? 'linear-gradient(155deg,rgba(57,146,150,0.5) 0%,rgba(57,146,150,0.2) 100%),rgba(255,255,255,0.05)' : 'linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(22,58,60,0.26)',
+        gbd: hot ? 'rgba(120,200,204,0.7)' : 'rgba(255,255,255,0.12)', padTop: big ? 'clamp(160px,14vw,220px)' : 'clamp(120px,9vw,144px)', titleSize: big ? 'clamp(28px,2.4vw,40px)' : 'clamp(22px,1.8vw,26px)', metaCols: big && S.vw >= 1200 ? 'repeat(3,minmax(0,1fr))' : 'minmax(0,1fr)',
+        bd: hot ? 'rgba(120,200,204,0.7)' : 'rgba(255,255,255,0.08)', op: dim ? 0.72 : 1, tint: hot ? 1 : 0, scale: hot ? 1.04 : 1, delay: i * 120,
+        enter: () => { if (S.ref !== i) this.setState({ ref: i }); } }; });
+
+    const supSrc = [
+      ['Rendszer- és alkalmazási irány tisztázása', 'A tér funkciója, használati helyzete és tervezői szándéka alapján a releváns rendszerirányok áttekintése.'],
+      ['Részletmegoldási egyeztetés', 'Csomópontok, csatlakozások és kritikus részletek műszaki átbeszélése a specifikáció vagy tender előtt.'],
+      ['Teljesítményadatok értelmezése', 'A rendelkezésre álló akusztikai, tűzvédelmi vagy egyéb műszaki teljesítményadatok értelmezése az adott projekt döntési helyzetében.'],
+      ['Specifikációs és dokumentációs támogatás', 'Részletrajzok, BIM/CAD anyagok, specifikációs segédletek és egyéb tervezési dokumentumok biztosítása az elérhető, jóváhagyott kör szerint.']
+    ];
+    const supports = supSrc.map(([title, body], i) => { const on = S.sup === i;
+      return { title, body, num: pad(i + 1), delay: i * 90, bg: on ? 'linear-gradient(155deg,rgba(57,146,150,0.2) 0%,rgba(57,146,150,0.06) 100%),rgba(255,255,255,0.55)' : 'rgba(255,255,255,0.6)', bd: on ? 'rgba(57,146,150,0.5)' : 'rgba(16,20,21,0.1)', f1: on ? 0.9 : 0.35, f2: on ? 0.6 : 0.18, enter: () => this.setState({ sup: i }) }; });
+
+    const docSrc = [
+      ['BIM / CAD', '[publikálható fájlformátumok és rendszerek felsorolása]', 'CAD'],
+      ['Részletrajzok / csomópontok', '[jóváhagyott részletcsomagok, rendszer szerint]', 'DWG'],
+      ['Specifikációs mintaszöveg', '[amennyiben rendelkezésre áll és publikálható]', 'DOC'],
+      ['Műszaki adatlapok', '[rendszerenkénti validált műszaki dokumentumok]', 'PDF'],
+      ['Teljesítménydokumentumok', '[akusztika / tűzvédelem / egyéb - kizárólag validált anyagok]', 'PDF'],
+      ['Katalógusok / rendszer guide-ok', '[aktuális, verziózott dokumentumok]', 'PDF']
+    ];
+    const q = S.q.trim().toLowerCase();
+    const match = d => !q || (d[0] + ' ' + d[1]).toLowerCase().includes(q);
+    const visible = docSrc.map((d, i) => ({ d, i })).filter(x => match(x.d));
+    const activeIdx = visible.some(x => x.i === S.doc) ? S.doc : (visible[0] ? visible[0].i : S.doc);
+    const da = docSrc[activeIdx];
+    const docCats = docSrc.map((d, i) => { const on = i === activeIdx, ok = match(d);
+      return { name: d[0], num: pad(i + 1), fw: on ? 600 : 500, bg: on ? ACT : 'transparent', bd: on ? 'rgba(120,200,204,0.7)' : 'transparent', op: ok ? 1 : 0.32, arrOp: on ? 1 : 0, sep: i === 3 ? 'transparent' : 'rgba(16,20,21,0.1)', select: () => this.setState({ doc: i }) }; });
+
+    const teamSrc = [
+      ['Projekt- és használati helyzet', 'Milyen térben, milyen funkcióra kerül a térelválasztás?'],
+      ['Kiválasztott rendszerirány', 'Mely rendszer / rendszerlogika került előtérbe, és miért?'],
+      ['Kritikus teljesítményelvárások', 'Mely műszaki paraméterek vagy használati követelmények döntőek?'],
+      ['Kritikus részletek', 'Mely csatlakozásokat, ajtókat, szerkezeti találkozásokat kell lezárni?'],
+      ['Nyitott kérdések', 'Mi nincs még eldöntve, és melyik szereplőhöz tartozik a döntés?'],
+      ['Következő lépés', 'Milyen dokumentum, validáció vagy egyeztetés szükséges a specifikáció lezárásához?']
+    ];
+    const tTwo = S.vw >= 1200;
+    const team = teamSrc.map(([title, body], i) => { const on = S.team === i;
+      return { title, body, num: (i + 1) + '.', bg: on ? 'linear-gradient(90deg,rgba(57,146,150,0.28) 0%,rgba(57,146,150,0.06) 100%)' : 'transparent',
+        pl: tTwo && i % 2 === 1 ? '20px' : (on ? '12px' : '0px'), bl: tTwo && i % 2 === 1 ? '1px solid rgba(255,255,255,0.16)' : '0',
+        pbg: on ? 'rgba(57,146,150,0.14)' : 'rgba(16,20,21,0.03)', pbd: on ? '#399296' : 'rgba(16,20,21,0.1)', enter: () => this.setState({ team: i }) }; });
+
+    const wfSrc = [
+      ['Kiindulás', 'Térfunkció, használati igény, designszándék tisztázása.', 'Releváns rendszerirányok és referenciahelyzetek megmutatása.'],
+      ['Rendszerirány', 'Esztétikai, funkcionális és teljesítményigény összehangolása.', 'Műszaki lehetőségek, dokumentáció és elérhető teljesítményadatok.'],
+      ['Műszaki validáció', 'Kritikus csatlakozások és részletek lezárása.', 'Részletmegoldási egyeztetés; szükséges dokumentáció azonosítása.'],
+      ['Specifikáció', 'A megoldás egyértelmű, továbbadható kiírása.', 'BIM/CAD, részletrajz, specifikációs segédlet - elérhető kör szerint.'],
+      ['Tender / megvalósítás', 'A tervezői szándék következetes továbbvitele.', 'Műszaki egyeztetés a projekt résztvevőivel és a kivitelezési tapasztalat visszacsatolása.']
+    ];
+    const wf = wfSrc.map(([title, dec, sup], i) => { const on = S.wf === i, done = i <= S.wf;
+      return { title, dec, sup, num: pad(i + 1), docs: i === 1 || i === 2,
+        dotBg: on ? '#399296' : done ? '#DDEAEA' : '#F4F3EF', dotInk: on ? '#fff' : done ? '#2C7478' : '#6E7779', dotBd: done ? '#399296' : 'rgba(16,20,21,0.2)', dotSh: on ? 'inset 0 1px 0 rgba(255,255,255,0.4), 0 0 0 6px rgba(57,146,150,0.14)' : 'none',
+        ink: on ? '#101415' : '#4A5456', line: on ? 1 : 0, op: on ? 1 : 0, vis: on ? 'visible' : 'hidden', y: on ? '0px' : '10px', mDot: '#399296',
+        select: () => { if (S.wf !== i) this.setState({ wf: i }); } }; });
+
+    const optSrc = [['A', 'Dokumentációt keresek', 'Gyors belépés a műszaki központba, vagy a tervezői specifikációs csomag igénylése.', 'Tervezői dokumentációk'], ['B', 'Projektről egyeztetnék', 'Specifikációs / részletmegoldási konzultáció konkrét terv, projektfázis vagy műszaki kérdés alapján.', 'Specifikációs konzultáció']];
+    const opts = optSrc.map(([k, title, body, cta]) => { const on = S.opt === k;
+      return { k, title, body, cta, bg: on ? ACT : GL, bd: on ? 'rgba(120,200,204,0.75)' : 'rgba(255,255,255,0.12)', sh: on ? 'inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -28px 56px -28px rgba(57,146,150,0.45)' : 'inset 0 1px 0 rgba(255,255,255,0.14)', kBg: on ? '#399296' : 'transparent', kBd: on ? '#399296' : 'rgba(255,255,255,0.3)', select: () => this.setState({ opt: k }) }; });
+    const phases = ['koncepció', 'tervezés', 'specifikáció', 'tender', 'kivitelezés'].map((t, i) => { const on = S.phase === i;
+      return { t, bg: on ? ACT : 'rgba(255,255,255,0.04)', bd: on ? 'rgba(120,200,204,0.75)' : 'rgba(255,255,255,0.18)', select: () => this.setState({ phase: on ? -1 : i }) }; });
+
+    return {
+      wide, narrow: !wide,
+      navDark: !light, navLight: light, navInk: light ? '#101415' : '#fff',
+      navBg: light ? 'linear-gradient(155deg,rgba(255,255,255,0.72) 0%,rgba(255,255,255,0.56) 42%,rgba(255,255,255,0.5) 100%),rgba(244,243,239,0.2)' : 'linear-gradient(155deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.05) 42%,rgba(255,255,255,0.02) 100%),rgba(16,20,21,0.18)',
+      navBorder: light ? 'rgba(16,20,21,0.04)' : 'rgba(255,255,255,0.08)', navHighlight: light ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.34)', navBright: light ? 'brightness(1.04)' : 'brightness(0.9)',
+      navLeave: () => this.setState({ hoverNav: -1 }), navItems,
+      fullNav: S.vw >= 1024, compactNav: S.vw < 1024, menuVisible: S.vw < 1024 && S.menuOpen, menuIcon: S.menuOpen ? '×' : '≡', toggleMenu: () => this.setState({ menuOpen: !S.menuOpen }),
+      pickA: () => this.setState({ opt: 'A' }), pickB: () => this.setState({ opt: 'B' }),
+
+      heroCols: wide ? 'minmax(0,1fr) minmax(0,1fr)' : 'minmax(0,1fr)', heroMediaH: wide ? '100%' : '64vw',
+      splitCols: wide ? 'minmax(0,6fr) minmax(0,6fr)' : 'minmax(0,1fr)',
+      chCols: wide ? 'minmax(0,6fr) minmax(0,5fr)' : 'minmax(0,1fr)', chImgH: wide ? '380px' : '62vw',
+      challenges, chActive: challenges[S.ch],
+      refCols: wide ? 'minmax(0,7fr) minmax(0,5fr)' : mid ? 'repeat(2,minmax(0,1fr))' : 'minmax(0,1fr)', refRows: wide ? 'repeat(2,minmax(380px,auto))' : 'auto', refs, refLeave: () => this.setState({ ref: -1 }),
+      supCols: wide ? 'minmax(0,5fr) minmax(0,6fr)' : 'minmax(0,1fr)', supPos: wide ? 'sticky' : 'relative', supImgH: wide ? '260px' : '52vw', supItemCols: mid ? '72px minmax(0,1fr)' : 'minmax(0,1fr)', supports, supLeave: () => this.setState({ sup: -1 }),
+      q: S.q, setQ: e => this.setState({ q: e.target.value }), docCount: visible.length + ' / ' + docSrc.length + ' kategória',
+      docCols: wide ? '320px minmax(0,1fr)' : 'minmax(0,1fr)', docRailDir: wide ? 'column' : 'row', docRailBr: wide ? '1px solid rgba(255,255,255,0.1)' : '0', docRailBb: wide ? '0' : '1px solid rgba(255,255,255,0.1)',
+      docCats, docActive: { name: da[0], note: da[1], num: pad(activeIdx + 1) },
+      docRows: [1, 2, 3].map(n => ({ ext: da[2], name: '[' + da[0] + ' · dokumentum ' + n + ']', meta: '[verzió · méret]' })),
+      fileCols: mid ? '44px minmax(0,1fr) auto 40px' : '44px minmax(0,1fr) 40px',
+      pkgCols: wide ? 'minmax(0,7fr) minmax(0,5fr)' : 'minmax(0,1fr)', pkgImgH: wide ? '0px' : '56vw',
+      pkgItems: ['BIM/CAD', 'részletrajz', 'specifikációs segédlet', 'ellenőrzőlista', 'konzultációs lehetőség'].map(t => ({ t })),
+      teamCols: wide ? 'minmax(0,5fr) minmax(0,7fr)' : 'minmax(0,1fr)', teamPreviewOrder: wide ? 0 : 1, teamTextOrder: wide ? 1 : 0, teamItemCols: tTwo ? 'repeat(2,minmax(0,1fr))' : 'minmax(0,1fr)', team, teamLeave: () => this.setState({ team: -1 }),
+      pdfNote: S.pdfNote, pdfClick: e => { e.preventDefault(); this.setState({ pdfNote: true }); },
+      wf, wfFill: (S.wf / 4 * 80) + '%',
+      contactCols: wide ? 'minmax(0,5fr) minmax(0,6fr)' : 'minmax(0,1fr)', opts, phases,
+      formCols: mid ? 'repeat(2,minmax(0,1fr))' : 'minmax(0,1fr)',
+      fileLabel: S.files ? S.files + ' fájl kiválasztva' : 'Fájl kiválasztása',
+      onFile: e => this.setState({ files: e.target.files ? e.target.files.length : 0 }),
+      submitLabel: S.opt === 'A' ? 'Tervezői dokumentációk' : 'Specifikációs konzultáció',
+      notSent: !S.sent, sent: S.sent, submit: e => { e.preventDefault(); this.setState({ sent: true }); }, reset: () => this.setState({ sent: false }),
+      footCols: wide ? 'minmax(0,5fr) minmax(0,3fr) minmax(0,4fr)' : 'minmax(0,1fr)'
+    };
+  }
+}
+</script>
+</body>
+</html>
