@@ -1,0 +1,219 @@
+SIMO GROUP
+KIVITELEZŐICÉLCSOPORT OLDAL
+Tartalmi és szerkezeti brief a weboldalkészítő csapat számára
+[TR][TC] PROJECT CERTAINTY  •  KEVESEBB BIZONYTALANSÁG A HELYSZÍNEN
+Az oldal üzleti feladata
+A kivitelezői aloldal elsődleges célja nem annak bemutatása, hogyan csökkenthető a térelválasztási munkákból eredő kivitelezési, koordinációs és határidőkockázat. A látogatónak gyorsan meg kell értenie: hol keletkezik bizonytalanság, mit lehet előre lezárni, milyen dokumentáció és egyeztetés támogatja a döntést, és mi a következő üzleti lépés.
+ELSŐDLEGES CÉLCSOPORT
+[TR][TC] Fit-out kivitelezők
+Beszerzői és kivitelezési döntéshozók, akik csúszást, helyszíni vitát és koordinációs kockázatot akarnak elkerülni.
+[TC] Nagy generálkivitelezők
+Projektkockázat és alvállalkozói megbízhatóság alapján választanak; kontrollálható, dokumentált rendszerpartnert keresnek.
+ELSŐDLEGES KONVERZIÓ
+[TR][TC] Projekt előszűrés / műszaki egyeztetés
+Konkrét terv, tenderanyag vagy nyitott műszaki kérdés átbeszélése.
+[TC] Ajánlatkérés
+Projektérett érdeklődő számára rövid, jól kvalifikálható ajánlatkérési út.
+Stratégiai üzenet
+A helyszíni bizonytalanság nagy része korábban eldől.
+A SIMO szerepe ezen az oldalon: a kivitelezési bizonytalanságot nem általános „megbízhatósági” állításokkal, hanem rendszerlogikával és bizonyítékokkal csökkenteni - felelősségi pontokkal, beépítési logikával, dokumentációval, gyártási kontrollal és valós kivitelezési tapasztalattal.
+01  NYITÓSZEKCIÓ / HERO
+A helyszíni bizonytalanság nagy része korábban eldől.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+[TR][TC] BAL OLDAL - COPY
+Kis felső sor + H1 + 2 rövid bekezdés + 2 CTA. Mobilon ez kerüljön előre.
+[TC] JOBB OLDAL - VIZUÁL
+Valós kivitelezési helyzet vagy részlet: csatlakozás, beépítés, helyszíni koordináció. Ne általános stock építkezési fotó.
+Kis felső sor
+KIVITELEZŐKNEK  /  PROJECT CERTAINTY
+H1
+Kevesebb nyitott kérdés. Kontrollálhatóbb kivitelezés.
+Bevezető
+Egy térelválasztási rendszer kockázata ritkán csak a helyszínen kezdődik. Egy nem lezárt csatlakozás, egy bizonytalan felelősségi pont vagy egy későn véglegesített részlet a kivitelezés során már idő-, költség- és koordinációs problémává válhat.
+A SIMO a specifikációt, a műszaki részleteket, a gyártást és a beépítést egy rendszerként kezeli. A cél: a kritikus kérdéseket minél korábban lezárni, hogy a helyszínen kevesebb legyen a döntési kényszer és kiszámíthatóbb legyen a megvalósítás.
+[TR][TC] Projekt egyeztetése
+[TC] Műszaki konzultáció
+Mikrocopy
+Van terv, tenderkiírás vagy konkrét csomóponti kérdés? Küldje el a rendelkezésre álló anyagokat, és induljunk abból, ami már ismert.
+02  KIVITELEZÉSI PROBLÉMÁK
+A csúszás sokszor egy korábban nyitva maradt kérdés következménye.
+JAVASOLT OLDALSZERKEZET
+[TR][TC] BAL OLDAL - PROBLÉMATÉRKÉP
+5 döntési terület egymásra épülő folyamatként.
+[TC] JOBB OLDAL - MAGYARÁZAT
+Röviden: mi történik, ha az adott pont nincs időben lezárva.
+Számunkra a legfontosabb, hogy a projekt adott állapotában beépíthető-e, összehangolható-e a többi szakággal, és egyértelmű-e, hogy melyik döntés kihez tartozik.
+[TR][TC] Döntési terület
+[TC] Kivitelezői kérdés
+[TR][TC] 1. Specifikáció
+[TC] Ugyanazt a műszaki eredményt érti-e minden szereplő az ajánlatkérés alatt?
+[TR][TC] 2. Csatlakozások
+[TC] Le vannak-e zárva a mennyezeti, padló-, fal- és egyéb szerkezeti találkozások?
+[TR][TC] 3. Felelősségi pontok
+[TC] Egyértelmű-e, melyik döntés és előkészítő feladat melyik szereplőhöz tartozik?
+[TR][TC] 4. Ütemezés
+[TC] A szükséges döntések, gyártmánytervek és helyszíni készültség időben egymásra épülnek-e?
+[TR][TC] 5. Kivitelezés
+[TC] A helyszín valóban azt az állapotot biztosítja-e, amelyre a beépítési logika készült?
+Kiemelő mondat
+A cél nem az, hogy a helyszínen gyorsabban reagáljunk a bizonytalanságra, hanem hogy kevesebb bizonytalanság jusson el odáig.
+03  BEÉPÍTHETŐSÉG
+Mielőtt gyártási vagy helyszíni kérdéssé válik.
+A beépíthetőség nem egyetlen ellenőrzési pont. A rendszer, az épület szerkezetei, a helyszíni készültség és a kapcsolódó szakágak együtt határozzák meg, hogy a tervezett megoldás valóban megvalósítható-e.
+TARTALMI BLOKKOK
+[TR][TC] Mit kell időben ellenőrizni?
+Fogadó szerkezetek és csatlakozások; méretezési alapok; ajtók és szerelvények helyzete; kapcsolódó szakágak; hozzáférés és szerelhetőség; helyszíni készültség.
+[TC] Mit ad ehhez a SIMO?
+Műszaki egyeztetési pontok; elérhető részletrajzok és rendszerinformációk; gyártmánytervi / jóváhagyási logika [pontos belső folyamat validálandó]; projektfüggő beépítési egyeztetés.
+[TR][TC] Beépíthetőség egyeztetése
+[TC] Műszaki kérdés küldése
+04  KOORDINÁCIÓS FOLYAMAT
+Tiszta döntési pontok a tender és a beépítés között.
+JAVASOLT OLDALSZERKEZET
+[TR][TC] FOLYAMATÁBRA
+5-6 egymásra épülő lépés, vizuálisan vízszintes desktopon és függőleges mobilon.
+[TC] MELLETTE / ALATTA
+Minden lépéshez 1 mondat: mit kell lezárni, mielőtt továbbhalad a projekt.
+01 Projektindítás  A rendelkezésre álló terv, specifikáció és projektfázis közös értelmezése.
+02 Nyitott kérdések  Kritikus csatlakozások, felelősségi pontok és hiányzó döntések azonosítása.
+03 Műszaki egyeztetés  A választott rendszer és a projektfeltételek összehangolása.
+04 Jóváhagyási / gyártási alap  A gyártáshoz szükséges végleges információk és dokumentumok lezárása. [A pontos SIMO folyamat validálandó.]
+05 Helyszíni készültség  A beépítéshez szükséges fogadó állapot és kapcsolódó szakági feltételek ellenőrzése.
+06 Beépítés és átadás  A dokumentált megoldás következetes helyszíni megvalósítása és a szükséges átadási dokumentáció biztosítása [tényleges kör validálandó].
+UX-javaslatA folyamatábra egyes pontjai lehetnek kattinthatók, és nyithatnak rövid „mit kell ehhez előkészíteni?” tartalmat. Ez a blokk salesben is használható vizuális egyeztetési eszköz legyen.
+05  HATÁRIDŐ ÉS PROJEKTBIZTONSÁG
+A határidőt nem egyetlen szállítási dátum védi.
+A térelválasztási munkák ütemezése több függő döntésből áll. Ha a specifikáció, a jóváhagyás, a gyártási alap vagy a helyszíni készültség nincs időben lezárva, a kockázat egyszerűen továbbhalad a következő projektfázisba.
+HÁROM PROJEKTBIZTONSÁGI RÉTEG
+[TR][TC] Előkészítés
+A kritikus műszaki kérdések és felelősségi pontok azonosítása a gyártás előtt.
+[TC] Koordináció
+A SIMO munkarészének összehangolása a kapcsolódó szerkezetekkel, szakágakkal és projektütemmel.
+[TR][TC] Gyártási kontroll
+A jóváhagyott műszaki alap következetes továbbvitele a gyártásba. A konkrét kapacitás- és minőségbiztosítási proof pointokat [ide szükséges konkrét adat] alapján kell publikálni.
+[TC] Helyszíni megvalósítás
+Valós kivitelezési tapasztalat és dokumentált beépítési logika. Konkrét határidő-, hibaarány- vagy kapacitásállítás csak validált adattal jelenjen meg.
+Javasolt proof point sáv
+Gyártási kapacitás vagy technológiai proof point
+Minőségbiztosítási folyamat / ellenőrzési pont
+Kivitelezési országok / projektmennyiség
+Átlagos válaszidő 
+06  KIVITELEZŐI REFERENCIÁK
+JAVASOLT OLDALSZERKEZET
+[TR][TC] 3 REFERENCIAKÁRTYA
+Nagy projektkép + projekt neve + kivitelezői kihívás + SIMO megoldási logika + releváns proof point.
+[TC] CTA
+Összes referencia / Hasonló projekt egyeztetése
+Referencia #1
+[Projekt neve / helyszín #1]
+[Kivitelezői kihívás: pl. koordináció / ütemezés / csatlakozási komplexitás - valós projekt alapján]
+[Mit kellett előre lezárni?]
+[Milyen megoldási logikát alkalmazott a SIMO?]
+[Konkrét, publikálható eredmény / proof point]
+Referencia #2
+[Projekt neve / helyszín #2]
+[Kivitelezői kihívás: pl. koordináció / ütemezés / csatlakozási komplexitás - valós projekt alapján]
+[Mit kellett előre lezárni?]
+[Milyen megoldási logikát alkalmazott a SIMO?]
+[Konkrét, publikálható eredmény / proof point]
+Referencia #3
+[Projekt neve / helyszín #3]
+[Kivitelezői kihívás: pl. koordináció / ütemezés / csatlakozási komplexitás - valós projekt alapján]
+[Mit kellett előre lezárni?]
+[Milyen megoldási logikát alkalmazott a SIMO?]
+[Konkrét, publikálható eredmény / proof point]
+Tartalmi szabályA referencia ne „szép projekt” blokk legyen. Minden esetben legyen egyértelmű a kivitelező számára releváns probléma -&gt; döntés -&gt; megoldás -&gt; eredmény lánc.
+07  „MIT VIGYÉL TOVÁBB A CSAPATODNAK?” BLOKK
+A kivitelezői aloldal adjon egy könnyen továbbküldhető, 1-2 oldalas projektbiztonsági ellenőrzőlapot. A cél, hogy a projektvezető, beszerzés, műszaki előkészítés és helyszíni csapat ugyanazokat a nyitott kérdéseket lássa.
+„Projectbiztonségi Checklist - térelválasztási munkákhoz”
+1. Specifikáció: pontosan ugyanazt a műszaki eredményt árazza-e minden ajánlattevő?
+2. Csatlakozások: mely szerkezeti és szakági találkozások nincsenek még lezárva?
+3. Felelősségek: melyik döntés kihez tartozik, és ki adja hozzá az inputot?
+4. Jóváhagyások: mely dokumentum vagy döntés szükséges a gyártási alap lezárásához?
+5. Ütemezés: mely döntésnek mikorra kell megszületnie, hogy ne tolódjon a következő fázis?
+6. Helyszíni készültség: milyen fogadó állapot szükséges a beépítéshez?
+7. Nyitott kockázatok: mi az, ami még bizonytalan, és mi a következő konkrét lépés?
+[TR][TC] Checklist letöltése
+[TC] Projekt előszűrés
+08  MŰSZAKI DOKUMENTÁCIÓK
+A kivitelezői dokumentációs blokk ne általános PDF-archívum legyen. A cél, hogy a tender, műszaki egyeztetés és helyszíni előkészítés során szükséges anyagok gyorsan megtalálhatók legyenek.
+JAVASOLT KATEGÓRIÁK
+[TR][TC] Tender és előkészítés
+Rendszerbemutatók; műszaki adatlapok; tendersegédlet; specifikációs információ; teljesítménydokumentumok.
+[TC] Kivitelezés és koordináció
+Részletrajzok / csomópontok; szerelési / beépítési információk; felelősségi / előkészítési checklist; átadási információk.
+Kiemelt dokumentumok
+[TR][TC] Kivitelezői dokumentációk
+[TC] Dokumentáció kérése
+09  KAPCSOLAT / AJÁNLATKÉRÉS
+Ha van konkrét projekt, induljunk a nyitott kérdésekkel.
+A záró konverziós blokk különítse el a projektérett ajánlatkérést és a korábbi fázisú műszaki egyeztetést. A kivitelezőnek ne kelljen általános kapcsolatfelvételi űrlapból kitalálnia, melyik út való neki.
+KÉT BELÉPÉSI ÚT
+[TR][TC] Van konkrét tender / projekt
+Terv, kiírás, mennyiség vagy műszaki tartalom alapján szeretnék ajánlatot vagy projekt-egyeztetést.
+[TC] Még nyitott műszaki kérdések vannak
+Beépíthetőségről, csatlakozásról, felelősségi pontról vagy ütemezési kockázatról szeretnék egyeztetni.
+[TR][TC] Ajánlatkérés / projekt feltöltése
+[TC] Műszaki egyeztetés
+Űrlapmezők
+Név*
+Cég*
+E-mail*
+Telefonszám
+Projekt neve / helyszíne
+Projektfázis: tender / műszaki előkészítés / kivitelezés / egyéb
+Tervezett kivitelezési időszak [ha releváns]
+Milyen rendszer / munkarész érintett? [terméklista validálandó]
+Mi a fő nyitott kérdés?
+Dokumentumfeltöltés: alaprajz / kiírás / részlet / egyéb
+10  IMPLEMENTÁCIÓS BRIEF
+Mit kell a weboldalkészítő csapatnak megépítenie?
+Ajánlott oldalív
+Hero - projektbiztonsági pozicionálás
+Kivitelezési problématérkép
+Beépíthetőség
+Koordinációs folyamat
+Határidő és projektbiztonság
+3 releváns kivitelezői referencia
+„Mit vigyél tovább a csapatodnak?” / Project Certainty Checklist
+Műszaki dokumentációk
+Kapcsolat / ajánlatkérés
+CTA-hierarchia
+[TR][TC] Szint
+[TC] CTA
+[TC] Szerep
+[TR][TC] Elsődleges
+[TC] Projekt egyeztetése / Ajánlatkérés
+[TC] Projektérett kivitelezői érdeklődés
+[TR][TC] Másodlagos
+[TC] Műszaki egyeztetés
+[TC] Korábbi fázisú kockázatcsökkentés
+[TR][TC] Támogató
+[TC] Kivitelezői dokumentációk / Checklist
+[TC] Önálló információgyűjtés, nurturing
+UX / design irány
+A vizuális világ legyen műszaki, tiszta és prémium; kevés dekoratív elem, sok negatív tér.
+A kivitelezési témáknál használjunk valós részletfotót, szerelési helyzetet, tervrészletet vagy sematikus folyamatábrát.
+Ne legyen túlzsúfolt infografika. Egy képernyőn egyetlen döntési logika legyen.
+Mobilon a folyamatábrák függőlegesek legyenek, a CTA-k könnyen elérhetők.
+A dokumentációs blokk legyen szűrhető: dokumentumtípus / rendszer / felhasználási helyzet szerint, ha a CMS és a tartalomkészlet ezt támogatja.
+A referencia-kártyákon a projektkép mellett mindig jelenjen meg a kivitelezői probléma és a megoldás röviden.
+Mérési pontok
+Projekt egyeztetése CTA kattintás
+Műszaki konzultáció CTA kattintás és sikeres foglalás / beküldés
+Ajánlatkérő űrlap indítás és beküldés
+Dokumentációletöltések
+Projectbiztonsági Checklist letöltés
+Referenciaoldal átkattintás
+Dokumentumfeltöltással érkező SQL / opportunity arány - CRM-ben mérendő
+SEO / tartalmi fókusz
+A végleges kulcsszókutatás külön feladat, de az oldal szemantikájában természetesen jelenjen meg: térelválasztó kivitelezés, üvegfal kivitelezés, mobilfal kivitelezés, műszaki egyeztetés, beépíthetőség, generálkivitelezői / fit-out projekt, kivitelezési koordináció. A copy ne kulcsszóhalmozásból, hanem projektproblémából induljon ki.
+Élesítés előtt szükséges inputok
+3 publikálható, kivitelezői szempontból erős referencia
+Jóváhagyott gyártási / minőségbiztosítási proof pointok
+Pontos dokumentációs lista és publikálható fájlok
+Valós szolgáltatási kör: felmérés, műszaki támogatás, gyártmányterv, helyszíni egyeztetés, átadás
+Kapacitás- és határidőállítások, ha kommunikálni akarjuk őket
+Kapcsolattartó / sales routing és vállalható válaszadási SLA
+Termékkategóriák és űrlapválasztók végleges listája
+[TR][TC] KÖZPONTI OLDALÜZENET: KEVESEBB BIZONYTALANSÁG A PROJEKTBEN

@@ -1,0 +1,255 @@
+WEBOLDAL / FŐOLDAL
+Tartalmi és szerkezeti brief
+SIMO GROUP
+A dokumentum célja
+A főoldal tartalmi hierarchiájának és hozzávetőleges vizuális felosztásának átadása a weboldalt tervező és fejlesztő csapat számára. Nem pixelpontos UX terv.Megmutatja, milyen sorrendben, milyen blokkokkal és milyen döntési logikával képzeljük el az oldalt.
+FŐOLDAL - Alaplogika
+A látogató útja: pozicionálás → saját döntési helyzet felismerése → releváns persona-oldal → SIMO előnyök → bizonyítékok → dokumentáció / szakmai tartalom → kapcsolatfelvétel
+Verzió: 2026. augusztus
+00
+FŐOLDAL TELJES TARTALMI ÍVE
+A főoldal feladata
+A főoldal ne digitális céges prospektus legyen, hanem egy B2B döntéstámogató belépési pont. Már az első képernyőkön derüljön ki, hogy a SIMO milyen projektproblémát segít kezelni, kinek releváns, és milyen következő lépést kínál.
+1. HERO
+Pozicionálás + probléma + CTA
+2. KINEK SZÓL?
+Célcsoport-felismerés
+3. PERSONA ÁTVEZETÉS
+Saját döntési helyzet
+4. SIMO ELŐNYÖK
+Általános value proposition
+5. REFERENCIÁK
+Bizonyíték
+6. DOKUMENTÁCIÓ
+Specifikációs támogatás
+7. SZAKMAI TARTALOM
+Edukáció
+8. KAPCSOLAT
+Projekt / konzultáció
+Kiemelt konverziós utak
+Projekt egyeztetése
+Konkrét projekttel, tervvel, kiírással vagy ajánlatkérési igénnyel érkező látogatónak.
+Műszaki konzultáció
+Korábbi fázisban lévő, specifikációs vagy műszaki validációt kereső döntéshozónak.
+Dokumentációk
+Önállóan kutató, műszaki anyagot, adatlapot vagy tervezési segédletet kereső szakmai látogatónak.
+UX / fejlesztési alapelv
+A három fő CTA jelenjen meg következetesen az oldalon, de ne azonos vizuális súllyal. A „Projekt egyeztetése” legyen a fő konverzió, a „Műszaki konzultáció” a szakmai köztes konverzió, a dokumentáció pedig az önkiszolgáló belépési pont.
+01
+NYITÓSZEKCIÓ / HERO
+Kevesebb bizonytalanság a belsőépítészeti projektben.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+BAL OLDAL – SZÖVEG
+Brand platform / H1 / bevezető / CTA-k
+JOBB OLDAL – VIZUÁL
+Erős referenciafotó vagy rövid, letisztult projektvideó
+Desktopon javasolt 55–60% szöveg / 40–45% vizuál arány. Mobilon a copy kerüljön a vizuál elé.
+Kis felső sor
+THE ARCHITECTURE OF POSSIBILITY
+H1
+Kevesebb bizonytalanság a belsőépítészeti projektben.
+Bevezető
+Egy jól megtervezett tér önmagában még nem garancia a jó végeredményre. A specifikációnak, a műszaki részleteknek, a gyártásnak és a kivitelezésnek ugyanazt a koncepciót kell szolgálnia.
+A SIMO térstratégiai és munkakörnyezeti rendszerpartner. A kreatív téralkotást mérnöki gondolkodással, saját gyártási kontrollal és valós kivitelezési tapasztalattal kapcsoljuk össze, hogy a belső terek jól specifikálhatók, kiszámíthatóan megvalósíthatók és hosszú távon megtérülők legyenek.
+Kiemelő sor
+A specifikációtól a biztos megvalósításig.
+Projekt egyeztetése
+Műszaki konzultáció
+Referenciák/Dokumentációk megtekintése
+Mikrocopy a CTA alatt
+Van már terv, kiírás vagy konkrét műszaki kérdés? Küldje el a rendelkezésre álló dokumentációt, és induljunk abból, ami a projektben már ismert.
+Webes megjegyzés
+A hero elsődleges üzenete ne a termékkategória legyen („üvegfal / mobilfal”), hanem a projektbiztonság. A termékek később, az igény és a döntési helyzet kontextusában jelenjenek meg.
+02
+KINEK SZÓL?
+Egy projektben több szereplő dönt. Más szempontok alapján.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+6 KÁRTYÁS GRID
+2×3 desktop / 1 oszlop mobil. Minden kártyán célcsoport + egyetlen döntési feszültség.
+A térelválasztási rendszerekről ritkán egyetlen ember dönt. A tervező specifikál, a kivitelező a megvalósíthatóságot vizsgálja, a beruházó az értéket mérlegeli, az üzemeltető pedig azt, mi történik az átadás után.
+Ezért ugyanannak a megoldásnak több szakmai kérdésre is választ kell adnia.
+Építészek és belsőépítészek
+Designszabadság úgy, hogy a koncepció részleteiben is specifikálható és megvalósítható maradjon.
+Fit-out és generálkivitelezők
+Kevesebb nyitott műszaki kérdés, tisztább felelősségi pontok és kontrollálhatóbb helyszíni megvalósítás.
+Ingatlanfejlesztők
+Olyan tér, amely nemcsak az átadáskor képvisel értéket, hanem később is adaptálható és üzletileg védhető marad.
+Saját célú beruházók - közvetlen megrendelők
+Dokumentált, karbantartható rendszer és olyan beszállítói háttér, amely az átadás után is releváns.
+Bérlők
+Olyan munkakörnyezet, amely támogatja a fókuszt, az együttműködést és a változó szervezeti igényeket.
+Projektlebonyolítók  és tanácsadók
+Szakmailag védhető döntés, egyértelműbb koordináció és kevesebb beszállítói bizonytalanság.
+Interakciós javaslat
+A kártyák lehetnek kattinthatók, de ne feltétlenül mindegyik vezessen önálló persona landingre. A következő blokkban a prioritásos buyer personák kapjanak mélyebb, külön landing oldalra mutató átvezetést.
+03
+BUYER PERSONA ÁTVEZETŐ BLOKKOK
+Melyik döntésért felelsz a projektben?
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+BEVEZETŐ
+Rövid döntési kontextus
+KÁRTYÁK / SÁVOK
+5 különálló, erős blokk: tervező, kivitelező, beruházó, facility/procurement, exportpartner
+Javasolt az egymást váltó kép + copy sávos elrendezés vagy nagy, lapozható kártyák. Ne legyen egyszerű linklista.
+Más információra van szükség a specifikáció során, másra egy tender előtt, és másra akkor, amikor egy beruházást hosszú távú működés alapján kell megítélni.
+Válaszd ki azt a nézőpontot, amely a saját döntési helyzetedhez a legközelebb áll.
+Tervezőknek — A koncepció akkor erős, ha meg is valósítható.
+A tervezői szabadságot nem a műszaki háttér korlátozza. A jól felépített rendszer éppen azt teszi lehetővé, hogy az esztétikai elképzelés a részlettervezés, a specifikáció és a kivitelezés során is következetes maradjon. Dokumentációval, részletmegoldásokkal és műszaki egyeztetéssel támogatjuk a korai döntéseket.
+CTA: Megoldások tervezőknek
+Kivitelezőknek — A helyszíni bizonytalanság nagy része korábban dől el.
+Egy tisztázatlan csatlakozás, felelősségi pont vagy gyártási részlet a kivitelezés során már idő- és költségkockázat. A cél ezért nem az, hogy a problémákat gyorsan kezeljük a helyszínen, hanem hogy minél többet még előtte lezárjunk.
+CTA: Megoldások kivitelezőknek
+Beruházóknak és fejlesztőknek — A téralkotás nem csak bekerülési költség.
+A mai igényekre optimalizált tér néhány év múlva már más használati helyzettel találkozhat. A döntésnél ezért az adaptálhatóság, a hosszú távú működés és a későbbi átalakítás kockázata is számít. A téralkotás befektetés. Érdemes ennek megfelelő időtávon értékelni.
+CTA: Megoldások beruházóknak
+Exportpartnereknek — Egy új rendszer önmagában még nem épít piacot.
+A sikeres helyi jelenléthez műszaki tudásra, dokumentációra, értékesítési háttérre, képzésre és kiszámítható ellátásra is szükség van. A SIMO exportpartneri modelljének célja egy olyan támogató rendszer kialakítása, amelyben a termék mögött technikai, üzleti és marketingoldali háttér is rendelkezésre áll.
+CTA: Partneri együttműködés
+Webes megjegyzés
+A persona-blokkok ne termékoldalakra vezessenek. A landingek a persona saját döntési kérdéseiből induljanak, és csak utána mutassák meg, mely SIMO rendszerek / szolgáltatások relevánsak.
+04
+SIMO ÁLTALÁNOS, NEM PERSONA-SPECIFIKUS ELŐNYÖK
+A jó végeredmény nem egyetlen terméken múlik.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+5 MODUL
+Javasolt horizontális lépéssor vagy 2+3 kártyás grid. Rövid cím + 2–3 mondat / elem.
+A belsőépítészeti projektekben a minőség több egymásra épülő döntés eredménye. A SIMO ezért a téralkotást nem különálló elemek, hanem egy összefüggő rendszer oldaláról kezeli.
+01 — Rendszerszintű projektgondolkodás
+A részleteknek együtt kell működniük. A tervezési szándékot, a műszaki követelményeket, a gyárthatóságot és a helyszíni megvalósítást már a döntési folyamat során egymáshoz kell igazítani. Ez segít abban, hogy kevesebb nyitott kérdés jusson el a kivitelezésig.
+02 — Specifikációs támogatás
+A jó döntéshez használható információ kell. A megfelelő rendszer kiválasztásához nem elég egy terméknév. Funkciót, használatot, csatlakozásokat, műszaki teljesítményt és későbbi igényeket is tisztázni kell. Ebben dokumentációval és szakmai egyeztetéssel támogatjuk a projekt szereplőit.
+03 — Gyártási kontroll
+A terv és a megvalósítás közötti kapcsolat a gyártásban válik fizikaivá. A saját rendszerfejlesztési és gyártási háttér lehetővé teszi, hogy a tervezési, gyártási és kivitelezési szempontok ne egymástól elszigetelten jelenjenek meg.
+04 — Valós kivitelezési tapasztalat
+Egy részlet értékét végül a helyszín igazolja. A kivitelezési tapasztalat visszahat a tervezésre és a termékfejlesztésre. Így a döntéseknél nemcsak azt vizsgáljuk, hogyan működik egy rendszer terven, hanem azt is, hogyan építhető be és használható a gyakorlatban.
+05 — Hosszú távú működés
+A jó tér az átadás után is működik. A használhatóság, az adaptálhatóság, a karbantarthatóság és a későbbi változtatások lehetősége a beruházás hosszú távú értékének része. Ezért a téralkotásnál nem csak az átadás napjára tervezünk.
+Ismerje meg, hogyan dolgozunk
+05
+KIEMELT REFERENCIÁK
+Megvalósult projektek. Valós döntési helyzetek.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+REFERENCIA #1
+Nagy kép + projekt neve + kihívás / megoldás
+REFERENCIA #2
+Nagy kép + projekt neve + kihívás / megoldás
+REFERENCIA #3
+Nagy kép + projekt neve + kihívás / megoldás
+Desktopon 3 kártya egymás mellett; mobilon lapozható vagy egymás alatti. A képdominancia maradjon erős, de minden referencia kapjon üzleti / projektlogikai kontextust.
+Egy referencia számunkra nemcsak a végeredményt mutatja meg. Azt is, milyen tervezési, műszaki vagy kivitelezési kérdést kellett megoldani ahhoz, hogy a tér valóban működjön.
+[Referencia #1 neve]
+[Projekt típusa / helyszíne][1 mondat a projekt fő kihívásáról vagy megoldási logikájáról.]
+[Referencia #2 neve]
+[Projekt típusa / helyszíne][1 mondat a projekt fő kihívásáról vagy megoldási logikájáról.]
+[Referencia #3 neve]
+[Projekt típusa / helyszíne][1 mondat a projekt fő kihívásáról vagy megoldási logikájáról.]
+Kártya CTA: Esettanulmány megtekintése
+Összes referencia
+06
+MŰSZAKI / DOKUMENTÁCIÓS KÖZPONT ÁTVEZETŐ
+Műszaki információ, amikor dönteni kell.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+BAL OLDAL – ÜZENET
+Miért fontos + fő CTA
+JOBB OLDAL – DOKUMENTUMTÍPUSOK
+Katalógusok / műszaki adatlapok / BIM-CAD / részletrajzok / tanúsítványok
+A tervezés és a specifikáció során a megfelelő dokumentáció csökkenti a későbbi kérdések számát.
+A műszaki központban egy helyen érhetők el a SIMO rendszereihez kapcsolódó tervezési és döntéstámogató anyagok.
+Elérhető dokumentumok
+Katalógusok és rendszerbemutatók
+Műszaki adatlapok
+PDF dokumentációk
+BIM/CAD fájlok 
+Részletrajzok / csomópontok
+Specifikációs segédanyagok
+Tanúsítványok / teljesítményadatok
+Műszaki dokumentációk megtekintése
+Kérjen műszaki segítséget
+Funkcionális javaslat
+A dokumentációs központ legyen szűrhető rendszer: termék / dokumentumtípus / felhasználási terület szerint. A főoldali blokk feladata nem a teljes lista megmutatása, hanem annak kommunikálása, hogy a szükséges szakmai anyagok strukturáltan elérhetők. A műszaki segítséget naptárral kell megoldani. Tehát kell oda egy booking felület. 
+07
+SZAKMAI TARTALMAK ÁTVEZETŐ
+Jobb projektek jobb kérdésekkel kezdődnek.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+KIEMELT CIKK #1
+Kép / téma / rövid döntési relevancia
+KIEMELT CIKK #2
+Kép / téma / rövid döntési relevancia
+A két kiemelt cikk alatt egy „Szakmai tudástár” CTA. A homepage-en ne legyen klasszikus blogfeed.
+A specifikáció, az akusztika, a kivitelezhetőség vagy a hosszú távú térhasználat kérdései ritkán válaszolhatóak meg egyetlen termékadattal.
+Szakmai tartalmaink célja, hogy érthetőbbé tegyék ezeket az összefüggéseket, és használható döntési szempontokat adjanak tervezéshez, kivitelezéshez és beruházáshoz.
+[Kiemelt szakmai cikk #1 címe]
+[2–3 mondatos rövid leírás: milyen projektproblémára ad választ, és kinek releváns.]CTA: Cikk elolvasása
+[Kiemelt szakmai cikk #2 címe]
+[2–3 mondatos rövid leírás: milyen döntési helyzetben segít.]CTA: Cikk elolvasása
+CTA Szakmai tudástár
+Tartalmi javaslat
+A kiemelt cikkek kiválasztásánál olyan témák kerüljenek előre, amelyek közvetlenül támogatják a sales beszélgetéseket: projektbiztonság, specifikáció, akusztika, lifecycle / adaptálhatóság.
+08
+KAPCSOLAT / AJÁNLATKÉRÉS
+Van egy projekt, amit érdemes időben átbeszélni?
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+BAL OLDAL – ŰRLAP
+Projektadatok + szerepkör + fázis + dokumentumfeltöltés
+JOBB OLDAL – KAPCSOLAT
+Két belépési út + elérhetőségek + konzultáció
+Desktopon javasolt 60% form / 40% kapcsolat. Mobilon a két belépési lehetőség kerüljön az űrlap elé.
+Nem szükséges minden részletnek véglegesnek lennie az első egyeztetéshez.
+Ha már rendelkezésre áll alaprajz, koncepció, kiírás vagy konkrét műszaki kérdés, abból el tudjuk kezdeni a projekt áttekintését. Ha a projekt még korábbi fázisban van, specifikációs vagy műszaki konzultációval tudjuk támogatni a következő döntést.
+Van konkrét projektem
+Terv, műszaki tartalom vagy ajánlatkérési igény alapján szeretnék egyeztetni.CTA: Projekt egyeztetése
+Még a döntés előkészítésénél tartok
+Rendszerválasztásról, specifikációról vagy műszaki megoldásról szeretnék szakértővel beszélni.CTA: Műszaki konzultáció kérése
+Javasolt űrlapszöveg
+Mondj el nekünk néhány dolgot a projektről.
+Minél jobban értjük a projekt jelenlegi fázisát és a nyitott kérdéseket, annál relevánsabban tudunk reagálni.
+Mező
+Javasolt input / opciók
+Név*
+rövid szöveg
+Cég*
+rövid szöveg
+E-mail*
+e-mail
+Telefonszám
+telefon
+Milyen szerepben vesz részt a projektben?*
+Építész / belsőépítész / kivitelező / beruházó / facility / procurement / egyéb
+Projekt helyszíne
+rövid szöveg
+Milyen fázisban van a projekt?*
+Koncepció / tervezés / specifikáció / tender / kivitelezés / egyéb
+Miben kér segítséget?*
+szabad szöveges mező
+Dokumentum feltöltése
+alaprajz / kiírás / egyéb dokumentum
+Küldés gomb: Projekt elküldése egyeztetésre
+Form alatti mikrocopy: A megkeresésre [ide szükséges konkrét válaszadási SLA] időn belül reagálunk.
+Közvetlen kapcsolat
+SIMO GROUP
+[telefonszám][e-mail-cím][cím]
+Általános projektmegkeresés: [e-mail]Műszaki konzultáció: [e-mail / időpontfoglalási link]Nemzetközi / partneri megkeresés: [e-mail]
+Konverziós alapelv
+Ne mindenkit azonnali ajánlatkérésre tereljünk. A műszaki konzultáció önálló, legitim következő lépés azoknak, akiknek még nincs lezárt specifikációjuk vagy tenderük.
+09
+ÖSSZEFOGLALÓ A WEBES CSAPATNAK
+Mit kell a főoldalnak 30–60 másodperc alatt elmondania?
+1. Mi a SIMO?
+Térstratégiai és munkakörnyezeti rendszerpartner; nem egyszerű termékgyártó.
+2. Milyen problémát old?
+Csökkenti a specifikációs, kivitelezési és hosszú távú működési bizonytalanságot.
+3. Nekem releváns?
+A látogató gyorsan felismeri a saját szerepét és döntési helyzetét.
+4. Miért hihető?
+Saját rendszerfejlesztés, gyártási kontroll, kivitelezési tapasztalat, dokumentáció és referenciák.
+5. Mit tegyek most?
+Projekt egyeztetése / műszaki konzultáció / dokumentáció megtekintése.
+CTA-hierarchia
+ELSŐDLEGES
+Projekt egyeztetése — konkrét projektérett érdeklődő
+MÁSODLAGOS
+Műszaki konzultáció — specifikációs / validációs fázis
+HARMADLAGOS
+Dokumentációk — önállóan kutató szakmai látogató
+Megjegyzés a designhoz
+A dokumentum a tartalmi és döntési logikát rögzíti, nem a végleges grafikai tervet. A vizuális rendszer legyen levegős, nagy negatív terekkel, erős tipográfiával, prémium referenciafotókkal és műszaki részleteket idéző finom grafikai elemekkel. A design ne dekorálja túl a szakmai tartalmat; inkább tegye gyorsan áttekinthetővé és hitelessé.

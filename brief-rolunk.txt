@@ -1,0 +1,250 @@
+WEBOLDAL / RÓLUNK
+Tartalmi és szerkezeti brief
+SIMO GROUP
+[TR][TC] A dokumentum célja
+A Rólunk oldal tartalmi hierarchiájának, webes szövegeinek és hozzávetőleges vizuális felosztásának átadása a weboldalt tervező és fejlesztő csapat számára. Nem pixelpontos UX terv, hanem tartalmi wireframe: megmutatja, milyen sorrendben, milyen blokkokkal és milyen márka-logikával képzeljük el az oldalt.
+Alaplogika
+A Rólunk oldal ne klasszikus cégtörténeti prospektus legyen. A látogatónak azt kell megértenie, hogyan gondolkodik a SIMO, milyen értékrendszer alapján működik, hogyan kapcsolódnak össze a vállalat képességei, és mi ad szakmai fedezetet a márka pozíciójának.
+Márkahang
+Nyugodt, mérnöki, pontos és partneri. A márka inspirálhat, de minden nagyobb állítást rendszerlogikával, működési háttérrel vagy valós vállalati struktúrával kell alátámasztani.
+Verzió: 2026. augusztus
+[TR][TC] 00
+[TC] RÓLUNK OLDAL TELJES TARTALMI ÍVE
+Mit kell elmondania a Rólunk oldalnak?
+A főoldal azt mutatja meg, milyen projektproblémákban releváns a SIMO. A Rólunk oldal ennek a szakmai fedezetét adja: honnan jön a gondolkodásmód, mi a küldetés és a jövőkép, milyen értékek szerint működik a vállalat, hogyan épül fel az integrált rendszer, és milyen fejlődési ív vezetett idáig.
+[TR][TC] 1. HERO
+Pozicionálás + vállalati karakter
+[TC] 2. BRAND STORY
+Miért létezik és hogyan gondolkodik a SIMO?
+[TR][TC] 3. MISSION
+Mit vállalunk a jelenben?
+[TC] 4. VISION
+Milyen rendszert építünk hosszú távon?
+[TR][TC] 5. VALUES
+Milyen működési elvek nem változnak?
+[TC] 6. MILESTONES
+Hogyan jutottunk el idáig?
+[TR][TC] 7. BRAND ARCHITECTURE
+Hogyan kapcsolódnak össze a képességek és üzletágak?
+[TC] 8. BRAND PROMISE / CTA
+Mit jelent mindez a partner számára?
+[TR][TC] UX / fejlesztési alapelv
+A Rólunk oldal legyen vizuálisan levegős, prémium és szerkesztett. A hosszabb márkastratégiai anyagokat ne teljes terjedelemben tegyük ki: a weben rövid, erős blokkok jelenjenek meg, a részletes tartalom pedig vizuális struktúrában, kártyákban, idővonalon és rendszerábrán legyen feldolgozva.
+[TR][TC] 01
+[TC] NYITÓSZEKCIÓ / HERO
+Kreatív téralkotás. Mérnöki kontrollal.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+[TR][TC] BAL OLDAL - ÜZENET
+Kis felső sor / H1 / rövid pozicionálás / CTA
+[TC] JOBB OLDAL - VIZUÁL
+Erős, építészeti részletfotó vagy rövid film: design + gyártás + kivitelezés rétegei
+Desktopon javasolt 55-60% szöveg / 40-45% vizuál. Mobilon a copy kerüljön előre.
+KIS FELSŐ SOR
+THE ARCHITECTURE OF POSSIBILITY
+H1
+Kreatív téralkotás. Mérnöki kontrollal.
+BEVEZETŐ
+A SIMO GROUP egy rendszerben gondolkodó, nemzetközi szemléletű téralkotó vállalat. A mérnöki alapú termékfejlesztést és tervezést saját gyártási kontrollal, valós kivitelezési tapasztalattal és folyamatos innovációval kapcsoljuk össze.
+Nem különálló elemekben gondolkodunk, hanem egy olyan értékláncban, ahol a design, a műszaki megvalósíthatóság, a gyártás és a hosszú távú működés ugyanannak a rendszernek a része.
+KIEMELŐ SOR
+A specifikációtól a biztos megvalósításig.
+[TR][TC] Hogyan dolgozunk
+[TC] Referenciák
+[TC] Kapcsolat
+[TR][TC] Webes megjegyzés
+A hero ne történeti évszámmal vagy termékkategóriával nyisson. Először a vállalat karakterét és működési logikáját kell megmutatni. A történeti elemek később, a Milestones szekcióban jelenjenek meg.
+[TR][TC] 02
+[TC] BRAND STORY
+A jó tér hosszú távon is működik.
+JAVASOLT OLDALSZERKEZET / DESKTOP VÁZ
+[TR][TC] BAL OLDAL - NARRATÍVA
+Headline + 3-4 rövid bekezdés
+[TC] JOBB OLDAL - VIZUÁL
+Tér / részlet / tervezés / gyártás / kivitelezés montázs vagy scroll-story
+A brand story vizuálisan is mutassa meg, hogy a SIMO nem egyetlen termékből, hanem összekapcsolt képességekből áll.
+WEBES SZÖVEG
+Minden szervezet többre képes. De a potenciál nem válik önmagában teljesítménnyé. Kell hozzá egy környezet, amely támogatja a fókuszt, az együttműködést, a rugalmasságot és a mindennapi működést.
+A jó tér ezért nem pusztán látványos. Nem pusztán funkcionális, és nem csak az átadás napján kell működnie. A tervező számára specifikálhatónak, a kivitelező számára kiszámíthatónak, a beruházó számára értékállónak, a használó számára természetesnek, az üzemeltető számára pedig fenntarthatónak kell lennie.
+A SIMO ezt a szemléletet képviseli. A kreatív téralkotást mérnöki kontrollal és valós kivitelezési tapasztalattal kapcsoljuk össze, hogy a tér ne kockázat, hanem lehetőség legyen.
+Ez a The Architecture of Possibility.
+[TR][TC] Narratív szerep
+Ez a blokk a marketingstratégiában rögzített Brand Narrative webes, rövidített változata. A cél nem önéletrajzi cégtörténet, hanem annak megmutatása, milyen problémára és milyen gondolkodásmóddal épült fel a márka.
+[TR][TC] 03
+[TC] MISSION / KÜLDETÉS
+A bizalmat hosszú távú értékké alakítani.
+WEBES SZÖVEG
+A SIMO azért létezik, hogy partnerei bizalmát és tőkéjét kiszámítható, hosszú távú értékké alakítsa. Ehhez a kreatív téralkotást, a mérnöki precizitást és a digitális technológiát egyetlen, saját kézben tartott értékláncban kapcsoljuk össze.
+A KÜLDETÉS HÁROM MŰKÖDÉSI PILLÉRE
+[TR][TC] 01  Folyamatos fejlődés és technológiai kontroll
+A működés minden területén a hatékonyságot, a digitalizációt és a folyamatos fejlesztést keressük. A cél: egyre zártabb folyamatok, növekvő tudás és következetesebb minőség.
+[TR][TC] 02  Exportfókuszú fejlesztés és üzletági összehangolás
+A fejlesztéseket a nemzetközi piac elvárásaihoz igazítjuk. A tervezés, a gyártás, a kivitelezés és a kapcsolódó üzletágak összehangolása teremti meg a stabil kiszolgálás alapját.
+[TR][TC] 03  Közös profitabilitás és megtérülés
+A közös munka akkor fenntartható, ha értéket teremt a projekt minden szereplőjének. A SIMO ezt kiszámíthatósággal, technológiai pontossággal és gyorsasággal támogatja.
+[TR][TC] Vizuális javaslat
+A három pillér megjelenhet egymás mellett három kártyában vagy egymásra épülő horizontális rendszerként. Kerüljük a klasszikus „küldetés” stockfotós vállalati vizualitást; inkább folyamatot, technológiát és együttműködést mutassunk.
+[TR][TC] 04
+[TC] VISION / JÖVŐKÉP
+Nemzetközi ökoszisztéma. Hosszú távú építkezés.
+WEBES SZÖVEG
+A SIMO célja egy olyan határokon átívelő, nemzetközi ökoszisztéma működtetése, amely a belsőépítészeti térelválasztás piacán technológiai, digitalizációs és termékinnovációs szempontból iparági mércévé válik.
+Szerves és kiszámítható növekedésben gondolkodunk: új piacokkal, stratégiai partnerekkel és olyan infrastruktúrával, amely a helyi működést valódi technikai, üzleti és operatív háttérrel támogatja.
+A JÖVŐKÉP ÖT DIMENZIÓJA
+[TR][TC] Megtérülő befektetés
+A bizalom, idő, energia és tőke hosszú távú értékké alakítása minden döntés alapelve.
+[TC] Nemzetközi infrastruktúra
+Exportpartnerek és kirendeltségek integrálása üzleti, mérnöki, digitális és operatív háttérrel.
+[TR][TC] Piacformáló tudás
+A nemzetközi tapasztalat visszaforgatása a téralkotási kultúra, a szakmai tudás és a partneri működés fejlesztésébe.
+[TC] Stratégiai stabilitás
+A teljes értéklánc feletti kontroll és a több lábon álló vállalati rendszer a kiszámíthatóság alapja.
+[TR][TC] Fenntartható téralkotás
+Moduláris, áthelyezhető és újrahasznosítható rendszerek; a körforgásos szemlélet és az épületminősítési igények támogatása.
+[TR][TC] Webes megjegyzés
+A jövőkép ne „világmegváltó” hangon jelenjen meg. A 20-30 éves horizont, az exportpartneri rendszer, a digitális háttér és a teljes értéklánc kontrollja konkrétabb és hitelesebb, mint általános növekedési állítások.
+[TR][TC] 05
+[TC] VALUES / ÉRTÉKEK
+Négy elv, amely a működésben válik láthatóvá.
+JAVASOLT MEGJELENÉS
+[TR][TC] 4 ÉRTÉKKÁRTYA
+Név + rövid definíció + 1 működési következmény
+[TC] OPCIONÁLIS VIZUÁL
+Részletfotók: terv / gyártás / kivitelezés / partneri egyeztetés
+Az értékeket ne ikonokkal önmagukban, hanem működési példákkal tegyük kézzelfoghatóvá.
+[TR][TC] 01  Rendszerszintű gondolkodás
+Nem elemekben, hanem összefüggésekben gondolkodunk. A tér, a gyártástechnológia, a mérnöki tudás, a dokumentáció és a kivitelezési tapasztalat egyetlen működő rendszer része.
+[TC] 02  Értékteremtő téralkotás és innováció
+A design nem díszítés, hanem a funkció része. Olyan rendszereket és tereket fejlesztünk, amelyek inspirálnak, miközben támogatják a mindennapi használatot és a későbbi változást.
+[TR][TC] 03  Teljes körű kontroll és függetlenség
+A minőség a részletek feletti kontrollban dől el. A kapcsolódó értéklánc saját kézben tartása stabilabb árakat, határidőket és következetesebb megvalósítást tesz lehetővé.
+[TC] 04  Hosszú távú partneri együttműködés és megtérülés
+A jól kialakított tér és a közös munka egyaránt befektetés. Olyan partneri környezetet építünk, amely a projekt szereplőinek hosszú távú biztonságát és profitabilitását támogatja.
+MÁRKAARCHETÍPUSOK - BELSŐ DESIGN / COPY IRÁNY
+Alkotó: lehetőség és design.  |  Bölcs: rendszerlogika és edukáció.  |  Uralkodó: kontroll és stabilitás.  |  Gondoskodó: partneri megtérülés.
+[TR][TC] Fontos
+Az archetípusok nem feltétlenül kerüljenek ki szó szerint a publikus oldalra. Elsősorban a webdesign, a képválasztás és a copy karakterének belső iránytűi.
+[TR][TC] 06
+[TC] MILESTONES / MÉRFÖLDKÖVEK
+A fejlődés íve 
+[TR][TC] Forráshiány - szükséges input
+A projektben jelenleg elérhető márkamag, marketingstratégia és Tone of Voice dokumentumok nem tartalmaznak hiteles, évszámos vállalattörténeti mérföldköveket. Ezért ezen a részen nem találunk ki alapítási évet, projektet, piacnyitást vagy technológiai dátumot. A webes blokk szerkezete elkészíthető, de a konkrét idővonalhoz a SIMO vezetésétől validált adatok szükségesek.
+JAVASOLT IDŐVONAL-SZERKEZET
+[TR][TC] Év
+[TC] Mérföldkő
+[TC] Rövid webes magyarázat
+[TR][TC] 1989–2007
+[TC] Gyökerek Nyugat-Európában
+[TC] Simó Csaba, az alapító édesapja Németország-szerte belsőépítészeti falrendszerek, szekrényfalak és az első üvegfalmegoldások helyszíni telepítésével foglalkozik. A nyugat-európai irodapiac ebben az időszakban sokat fejlődik: általános igénnyé válik a rugalmas térfelosztás, és a digitalizációnak köszönhetően a szekrényfalak fokozatosan visszaszorulnak.
+[TR][TC] 2008–2012
+[TC] A következő generáció
+[TC] Simó A. Botond, a későbbi alapító és testvére, Simó Csaba becsatlakozik édesapjuk vállalkozásába — kezdetben szerelőként, majd építésvezetőként. Az üvegezett megoldások térnyerésével és a piac fellendülésével a családi vállalkozás olyan projekteket valósít meg, mint az AUDI ingolstadti fejlesztései, a Deutsche Bank frankfurti ikertornyai vagy a bécsi Pénzügyminisztérium.
+[TR][TC] 2012–2014
+[TC] Saját úton
+[TC] A Simó testvérek saját vállalkozás formájában, külön utakon folytatják a tevékenységet: számtalan projektet valósítanak meg különböző gyártású falrendszerekkel a német nyelvterületű országokban. Egy saját autóval, néhány fős csapattal és némi szerszámmal indul önálló pályafutásuk.
+[TR][TC] 2014
+[TC] Megalakul a SIMO jogelődje
+[TC] Simó A. Botond INTERIOR BUILD Kft. néven megalapítja a SIMO GROUP Kft. jogelődjét. A cél kettős: szakemberek kiküldetése a nyugati országokba és a magyarországi tevékenység beindítása.
+[TR][TC] 2015
+[TC] Erősödő csapat
+[TC] Simó Csaba, az alapító testvére csatlakozik a vállalathoz, és átveszi a 10 fő fölötti szerelőcsapat operatív irányításának jelentős részét.
+[TR][TC] 2016
+[TC] Cégcsoporttá szerveződés
+[TC] A már SIMO GROUP Kft. néven működő vállalat megalapítja a WALL CONSTRUCTOR Kft.-t: ezzel kezdetét veszi a cégcsoport újrastrukturálása és a kivitelezési üzletág leválasztása.
+[TR][TC] 2017–2018
+[TC] Elindul a saját termék fejlesztése
+[TC] Megkezdődik a saját gyártású termék aktív fejlesztése, miközben a kivitelezési üzletág folyamatosan erősödik. 2018-ban a cégcsoport összlétszáma meghaladja a 30 főt.
+[TR][TC] 2019
+[TC] Bemutatóterem, gyárépítés, rekordév
+[TC] Elindul a saját termék értékesítése, és elkészül a SIMO Budapest III. kerületi irodája és bemutatóterme. Elnyert pályázat keretében megkezdődik a SIMO gyárépületének építése. A kivitelezési üzletág elnyeri addigi legnagyobb munkáját a Siemens erlangeni központjában, és rekordárbevételt ér el.
+[TR][TC] 2020
+[TC] A legnehezebb időszak
+[TC] A saját termék értékesítése nem hozza a várt eredményeket: a fejlesztés nyugat-európai mintára épült, amely a hazai tervezői és kivitelezői körökben ekkor még nem ismert és elfogadott, a COVID-járvány pedig tovább nehezíti a kapcsolatépítést. A vállalat a budapesti iroda és bemutatóterem bezárására kényszerül. 
+Az új üzemcsarnok 80%-os készültségi fokon eladásra kerül: a 2014–2020-as pályázati konstrukció zárása miatt a SIMO GROUP önhibáján kívül nem kapja meg a felhívás szerinti 24 hónapos megvalósítási időt, így elesik a támogatástól. A kivitelezési üzletág a járvány és egy megrendelői visszaélés következtében a legnehezebb időszakát éli.
+[TR][TC] 2021
+[TC] Fordulópont: gyártóvá válás
+[TC] A meghiúsult pályázat után saját tőkéből kerülnek üzembe az alumínium-megmunkálást szolgáló Emmegi CNC gépek, amelyek új szintre emelik a termékek minőségét és a vállalat hatékonyságát. A SIMO megszerzi az első és máig egyetlen magyar üvegfal- és térelválasztó falrendszer gyártói státuszt. Nagy hangsúly kerül a termékpaletta bővítésére és a közép-európai piachoz igazított rendszerek fejlesztésére, cégcsoportszinten pedig jelentős stratégiai és működési átszerveződés veszi kezdetét.
+[TR][TC] 2022
+[TC] Új stratégia, első exportlépések
+[TC] Megalakul a SIMO ALU SERVICE Kft., amelynek célja, hogy az egyedi alumíniumprofilok importja és exportja mellett az alumínium szálanyag bérmegmunkálásának jelentős piaci szereplőjévé váljon. Cégcsoportszinten új, hosszú távú növekedési stratégia készül, amely megalapozza a folyamatos fejlődést, és megtörténnek az első lépések a saját termék exportja terén. A kivitelezési üzletág működési stratégiaváltáson megy át: ez megalapozza a vállalkozás függetlenségét és diverzifikált megrendelői állományát, a fókusz pedig a rövid távú célok helyett a hosszú távon biztosítható célokra kerül.
+[TR][TC] 2023–2024
+[TC] Szikszó: saját gyártóbázis
+[TC] A cégcsoport szisztematikus fejlődése, növekedése és erősödése dominál. Új építésű üzemcsarnokban kezdetét veszi a szikszói telephely és gyártóegység indítása, jelentősen nő a raktározási és gyártási kapacitás, és a versenyképesség növelése érdekében jelentős hatékonysági fejlesztések lépnek életbe.
+[TR][TC] 2025
+[TC] Nemzetközi nyitás
+[TC] Jelentős szervezeti fejlesztések valósulnak meg: felépül a mérnöki előkészítői és tanácsadói csapat, létrejön a dubaji márkaközpont (SIMO Spaces LLC), az exportstratégia további országokra terjed ki, és elindul a házon belüli szoftverfejlesztés.
+[TR][TC] 2026
+[TC] Iparági mérce
+[TC] Januárban jelentős gépparkberuházás valósul meg a legkorszerűbb, magas kategóriájú alumínium CNC-megmunkáló berendezések és szoftverek megvásárlásával — ezzel a SIMO gyártási kapacitása gond nélkül képes lefedni a teljes magyar üvegfalpiaci igény másfélszeresét. Az alumínium raktározási kapacitás januárban közel 50 tonnára nő, további logisztikai és készletkezelési fejlesztésekkel. Elindul a látványgyártás a megrendelői bizalom erősítése és a transzparens gyártási folyamatok érdekében, és többirányú szoftveres fejlesztés zajlik házon belül és kívül a hatékonyság maximalizálása és a hibázási arány minimalizálása céljából. 
+A kivitelezési üzletág Európa meghatározó szereplője és Németország piacvezetője: 11 gyártóval áll több éves — egyesekkel több mint tízéves — partneri kapcsolatban, és Európa-szerte végzi a rendszerek helyszíni kivitelezését. A cégcsoport a legszélesebb szakmai, piaci és termékismerettel rendelkező szereplő Európában; 8 fős mérnökcsapat gondoskodik a tanácsadási, termékfejlesztési, tervezési, gyártási és projektszervezési folyamatok legmagasabb színvonalú lebonyolításáról. Megtörténik a teljes átállás a 6. generációs termékcsaládra, a cégcsoport teljes létszáma pedig meghaladja a 65 főt.
+Fejlesztési javaslat: desktopon horizontális timeline vagy scrollozható idővonal; mobilon vertikális idővonal. Maximum 6-8 valóban jelentős állomás kerüljön ki.
+[TR][TC] 07
+[TC] SIMO BRAND ARCHITECTURE / VÁLLALATI ÖKOSZISZTÉMA
+Egy márka. Összekapcsolt értéklánc.
+WEBES SZÖVEG
+A SIMO GROUP nem egyetlen termék vagy egyetlen kivitelezési szolgáltatás köré épül. A vállalati rendszer értéke abból adódik, hogy a kapcsolódó képességek egymást erősítik: az alapanyag- és ellátási háttértől a tervezésen és termékfejlesztésen át a gyártásig, majd a nemzetközi kivitelezésig és partneri piacépítésig.
+JAVASOLT RENDSZERÁBRA
+HORIZONTÁLIS TÁMOGATÓ RÉTEGEK
+[TR][TC] Digitális és szoftveres háttér
+Ajánlati, tervezési és folyamatkezelési logika, technikai support és dokumentáció.
+[TC] Tudás és edukáció
+Növekvő mérnöki tudásbázis, specifikációs támogatás, partneri képzés.
+[TC] Brand és piacépítés
+Közös márka, marketingtámogatás, sales kit és nemzetközi partneraktiválás.
+[TR][TC] Fontos terminológiai megjegyzés
+A jelenlegi források az integrált holding- és értéklánc-logikát egyértelműen leírják, de nem tartalmaznak jóváhagyott, jogi vagy sub-brand szintű márkaarchitektúrát. Ha a SIMO GROUP alatt külön cégek, márkák vagy üzletági nevek jelennek meg a weben, ezek pontos neveit és hierarchiáját külön validálni kell. A fenti ábra ezért vállalati ökoszisztéma / értéklánc ábraként biztonságosan használható.
+[TR][TC] 08
+[TC] MÁRKAÍGÉRET ÉS ZÁRÓ CTA
+A téralkotás befektetés.
+WEBES SZÖVEG
+A SIMO integrált működésének célja, hogy a téralkotásba fektetett bizalom, idő és tőke hosszú távon is értéket teremtsen. A tervező számára védhetőbb specifikációt, a kivitelező számára kontrollálhatóbb megvalósítást, a beruházó számára értékállóbb teret, az üzemeltető számára pedig hosszú távon működő rendszert jelent.
+Innovatív kontroll. Tervezhető megtérülés.
+CTA-K
+[TR][TC] Projekt egyeztetése
+[TC] Műszaki konzultáció
+[TC] Referenciák
+[TR][TC] Webes megjegyzés
+A zárás kösse vissza a Rólunk oldalt az üzleti döntéshez. Ne maradjon a látogató egy absztrakt vállalati történet végén: kapjon konkrét következő lépést projekt, műszaki kérdés vagy referencia irányába.
+[TR][TC] 09
+[TC] WEBOLDALKÉSZÍTŐI IMPLEMENTÁCIÓS BRIEF
+Tartalmi és UX alapelvek
+1. OLDALRITMUS
+Váltakozzon a narratív copy, a kártyás információ, a vizuális proof és a strukturált diagram.
+Kerüljük a hosszú, egybefüggő „cégtörténet” szövegfalakat.
+A Mission, Vision és Values szekciók ne ugyanúgy nézzenek ki: legyen eltérő vizuális ritmusuk.
+A Brand Architecture legyen valódi rendszerábra, ne egyszerű bullet-lista.
+A Milestones csak validált évszámokkal és tényszerű állításokkal kerüljön élesbe.
+2. VIZUÁLIS IRÁNY
+Valós projekt-, tervezési, gyártási és kivitelezési képek; kevés stockfotó.
+Világos háttér, nagy negatív tér, sötétkék és SIMO türkiz fókuszszínek.
+Műszaki részletek és folyamatok jelenjenek meg vizuális bizonyítékként, ne dekorációként.
+Animáció csak akkor, ha segíti a rendszerlogika megértését - például az értéklánc vagy timeline felépülése.
+3. NAVIGÁCIÓ / ANCHOROK
+[TR][TC] Brand Story
+#brand-story
+[TC] Mission
+#mission
+[TC] Vision
+#vision
+[TR][TC] Values
+#values
+[TC] Milestones
+#milestones
+[TC] SIMO Architecture
+#architecture
+4. TARTALMI FÜGGŐSÉGEK - ÉLESÍTÉS ELŐTT SZÜKSÉGES
+[TR][TC] Tartalom
+[TC] Szükséges input
+[TR][TC] Milestones
+[TC] [validált évszámok + mérföldkövek + rövid magyarázatok]
+[TR][TC] Brand architecture
+[TC] [külön cégek / sub-brandek / jogi entitások pontos nevei, ha publikusak]
+[TR][TC] Nemzetközi jelenlét
+[TC] [országok / piacok / piacvezető állítások jóváhagyott proof pointjai, ha konkrétan kommunikáljuk]
+[TR][TC] Technológiai proof
+[TC] [jóváhagyott gyártási technológiák, számok, kapacitásadatok, ha kiírjuk]
+[TR][TC] Fotóanyag
+[TC] [vezetői / gyártási / projekt / kivitelezési képek jogtisztán]
+5. FORRÁSBÁZIS
+A tartalmi koncepció elsődleges forrásai: „A SIMO valódi márkamagja (Misszió - Vízió - Értékek)”, „SIMO GROUP Marketingstratégia 2026 - The Architecture of Possibility” és „SIMO GROUP Tone of Voice Guide 2026”. A Milestones és a formális sub-brand / jogi brand architecture jelenlegi forrásokból nem állítható össze teljes pontossággal; ezekhez külön vállalati input szükséges.
+ÖSSZEFOGLALÓ FEJLESZTŐI CÉL
+A Rólunk oldal mutassa meg érthetően, milyen gondolkodás, működési rendszer és hosszú távú vállalati logika áll a márka mögött. Így a tartalom bizalomépítő és sales-támogató lesz, nem pusztán vállalati bemutatkozás.
